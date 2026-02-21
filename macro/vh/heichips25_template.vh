@@ -4,13 +4,13 @@ module heichips25_template(
   inout VPWR,
   inout VGND,
 `endif
+  input clk,
   input[7:0] ui_in,
   output[7:0] uo_out,
   input[7:0] uio_in,
   output[7:0] uio_out,
   output[7:0] uio_oe,
   input ena,
-  input clk,
   input rst_n
 );
 endmodule
