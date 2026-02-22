@@ -13,11 +13,12 @@ meta:
 
 ERROR_ON_SYNTH_CHECKS: False
 
-DESIGN_NAME: heichips25_template
+DESIGN_NAME: heichips25_internal
 VERILOG_FILES: 
-  - dir::../src/heichips25_template.sv
+  - dir::../src/heichips25_internal.sv
   - dir::../src/shift_reg.v
   - dir::../src/mux_8x4_to_8.v
+  - dir::../src/custom_cells.v
   
 CLOCK_PORT: clk
 CLOCK_PERIOD: 10
@@ -47,7 +48,7 @@ MACROS:
         - dir::ips/multimode_dll/spef/nom/multimode_dll.nom.spef
     instances: 
       u_multimode_dll:
-        location: [40,30]
+        location: [40,37]
         orientation: N
   adc:
     gds:
@@ -61,9 +62,12 @@ MACROS:
         - dir::ips/adc/spef/nom/adc.nom.spef
     instances: 
       u_adc:
-        location: [420,5]
+        location: [414,7]
         orientation: N
-  
+
+# We cannot use Konrads Cells as a macro it
+# wont fit so we just implement it as a non-macro logic.
+# see: ./src/custom_cells.v for more details.
 #  custom_cells:
 #    gds:
 #      - dir::ips/custom_cells/gds/custom_cells.gds
@@ -91,9 +95,8 @@ MACROS:
         - dir::ips/delay_line/spef/nom/delay_line.nom.spef
     instances: 
       u_delay_line:
-        location: [427,121]
+        location: [427,123]
         orientation: N
-    
 
 # IMPORTANT
 PDN_MACRO_CONNECTIONS:
@@ -114,7 +117,7 @@ FP_SIZING: absolute
 
 # Small DEF template
 DIE_AREA: [0, 0, 500, 200]
-FP_DEF_TEMPLATE: dir::def/heichips25_template_small.def
+FP_DEF_TEMPLATE: dir::def/heichips25_template_small_internal.def
 
 # Large DEF template
 #DIE_AREA: [0, 0, 500, 415]

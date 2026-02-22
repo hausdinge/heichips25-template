@@ -1,0 +1,2350 @@
+* NGSPICE file created from heichips25_internal.ext - technology: ihp-sg13g2
+
+* Black-box entry subcircuit for sg13g2_decap_8 abstract view
+.subckt sg13g2_decap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dfrbpq_1 abstract view
+.subckt sg13g2_dfrbpq_1 RESET_B VSS VDD D Q CLK
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_2 abstract view
+.subckt sg13g2_fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_mux2_1 abstract view
+.subckt sg13g2_mux2_1 A0 A1 S X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_antennanp abstract view
+.subckt sg13g2_antennanp VDD VSS A
+.ends
+
+* Black-box entry subcircuit for sg13g2_decap_4 abstract view
+.subckt sg13g2_decap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_1 abstract view
+.subckt sg13g2_buf_1 A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_fill_1 abstract view
+.subckt sg13g2_fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21oi_1 abstract view
+.subckt sg13g2_a21oi_1 VSS VDD A1 A2 Y B1
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2_1 abstract view
+.subckt sg13g2_nor2_1 A B Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_8 abstract view
+.subckt sg13g2_buf_8 A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_tielo abstract view
+.subckt sg13g2_tielo VDD VSS L_LO
+.ends
+
+* Black-box entry subcircuit for delay_line abstract view
+.subckt delay_line VDD VSS clk clk_delayed reset sel[0] sel[1] sel[2] trim[0] trim[1]
++ trim[2] trim[3] trim[4] trim[5] trim[6] trim[7]
+.ends
+
+* Black-box entry subcircuit for sg13g2_inv_1 abstract view
+.subckt sg13g2_inv_1 VDD Y A VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and4_1 abstract view
+.subckt sg13g2_and4_1 A B C D X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and2_1 abstract view
+.subckt sg13g2_and2_1 A B X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_xor2_1 abstract view
+.subckt sg13g2_xor2_1 B A X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_16 abstract view
+.subckt sg13g2_buf_16 X A VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2_1 abstract view
+.subckt sg13g2_nand2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_and3_1 abstract view
+.subckt sg13g2_and3_1 X A B C VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a22oi_1 abstract view
+.subckt sg13g2_a22oi_1 Y B1 B2 A2 A1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_xnor2_1 abstract view
+.subckt sg13g2_xnor2_1 Y A B VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand3_1 abstract view
+.subckt sg13g2_nand3_1 B C A Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_a21o_1 abstract view
+.subckt sg13g2_a21o_1 A2 A1 B1 X VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_dlhq_1 abstract view
+.subckt sg13g2_dlhq_1 D GATE Q VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_o21ai_1 abstract view
+.subckt sg13g2_o21ai_1 B1 VDD Y VSS A1 A2
+.ends
+
+* Black-box entry subcircuit for adc abstract view
+.subckt adc VDD VSS analog_in clk data_out[0] data_out[1] data_out[2] data_out[3]
++ data_out[4] data_out[5] data_out[6] data_out[7] ready start
+.ends
+
+* Black-box entry subcircuit for multimode_dll abstract view
+.subckt multimode_dll VDD VSS bias clk0_out clk0_phase_sel[0] clk0_phase_sel[1] clk0_phase_sel[2]
++ clk0_phase_sel[3] clk0_phase_sel[4] clk1_out clk1_phase_sel[0] clk1_phase_sel[1]
++ clk1_phase_sel[2] clk1_phase_sel[3] clk1_phase_sel[4] clk2_out clk2_phase_sel[0]
++ clk2_phase_sel[1] clk2_phase_sel[2] clk2_phase_sel[3] clk2_phase_sel[4] dco enable
++ ext_trim[0] ext_trim[10] ext_trim[11] ext_trim[12] ext_trim[13] ext_trim[14] ext_trim[15]
++ ext_trim[16] ext_trim[17] ext_trim[18] ext_trim[19] ext_trim[1] ext_trim[20] ext_trim[21]
++ ext_trim[22] ext_trim[23] ext_trim[24] ext_trim[25] ext_trim[2] ext_trim[3] ext_trim[4]
++ ext_trim[5] ext_trim[6] ext_trim[7] ext_trim[8] ext_trim[9] f_clk0_divider[0] f_clk0_divider[1]
++ f_clk0_divider[2] f_clk0_divider[3] f_clk0_divider[4] f_clk1_divider[0] f_clk1_divider[1]
++ f_clk1_divider[2] f_clk1_divider[3] f_clk1_divider[4] f_clk2_divider[0] f_clk2_divider[1]
++ f_clk2_divider[2] f_clk2_divider[3] f_clk2_divider[4] f_osc_multiply_factor[0] f_osc_multiply_factor[1]
++ f_osc_multiply_factor[2] f_osc_multiply_factor[3] f_osc_multiply_factor[4] mode_xor[0]
++ mode_xor[1] mode_xor[2] osc osc_out resetb stable
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand4_1 abstract view
+.subckt sg13g2_nand4_1 B C A Y VDD VSS D
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor3_1 abstract view
+.subckt sg13g2_nor3_1 A B C Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nand2b_1 abstract view
+.subckt sg13g2_nand2b_1 Y B A_N VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_nor2b_1 abstract view
+.subckt sg13g2_nor2b_1 A B_N Y VDD VSS
+.ends
+
+* Black-box entry subcircuit for sg13g2_mux4_1 abstract view
+.subckt sg13g2_mux4_1 S0 A0 A1 A2 A3 S1 X VDD VSS
+.ends
+
+.subckt heichips25_internal VGND VPWR analog_adc analog_pin0 analog_pin1 clk ena rst_n
++ ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0]
++ uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0]
++ uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0]
++ uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0]
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7]
+XFILLER_11_807 VPWR VGND sg13g2_decap_8
+XFILLER_7_7 VPWR VGND sg13g2_decap_8
+XFILLER_46_704 VPWR VGND sg13g2_decap_8
+XFILLER_27_973 VPWR VGND sg13g2_decap_8
+XFILLER_6_800 VPWR VGND sg13g2_decap_8
+X_294_ net42 VGND VPWR _031_ data\[23\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_343 VPWR VGND sg13g2_decap_8
+XFILLER_49_542 VPWR VGND sg13g2_decap_8
+XFILLER_3_67 VPWR VGND sg13g2_decap_8
+XFILLER_45_770 VPWR VGND sg13g2_decap_8
+XFILLER_5_4 VPWR VGND sg13g2_decap_8
+XFILLER_3_803 VPWR VGND sg13g2_decap_8
+XFILLER_46_534 VPWR VGND sg13g2_fill_2
+X_346_ net45 VGND VPWR _083_ data\[75\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_46_578 VPWR VGND sg13g2_decap_8
+X_277_ net43 VGND VPWR _014_ data\[6\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_151 VPWR VGND sg13g2_decap_8
+XFILLER_49_372 VPWR VGND sg13g2_decap_8
+X_200_ data\[24\] data\[25\] net20 _033_ VPWR VGND sg13g2_mux2_1
+X_131_ data\[78\] data\[79\] data\[82\] _098_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_600 VPWR VGND sg13g2_decap_8
+XFILLER_2_165 VPWR VGND sg13g2_decap_8
+XFILLER_3_677 VPWR VGND sg13g2_decap_8
+XFILLER_0_35 VPWR VGND sg13g2_decap_8
+XFILLER_47_854 VPWR VGND sg13g2_decap_8
+XFILLER_9_11 VPWR VGND sg13g2_decap_8
+X_329_ net34 VGND VPWR _066_ data\[58\] clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_38_854 VPWR VGND sg13g2_decap_8
+XFILLER_21_765 VPWR VGND sg13g2_decap_8
+XFILLER_0_636 VPWR VGND sg13g2_decap_8
+XFILLER_12_765 VPWR VGND sg13g2_decap_8
+XFILLER_47_651 VPWR VGND sg13g2_decap_8
+XFILLER_46_150 VPWR VGND sg13g2_fill_2
+XFILLER_26_835 VPWR VGND sg13g2_decap_8
+XFILLER_20_54 VPWR VGND sg13g2_fill_2
+XFILLER_48_459 VPWR VGND sg13g2_decap_8
+XFILLER_45_84 VPWR VGND sg13g2_decap_8
+XANTENNA_5 VPWR VGND adc_data\[2\] sg13g2_antennanp
+XFILLER_3_293 VPWR VGND sg13g2_decap_8
+XFILLER_20_4 VPWR VGND sg13g2_decap_4
+XFILLER_2_709 VPWR VGND sg13g2_decap_8
+Xoutput7 net7 uio_out[1] VPWR VGND sg13g2_buf_1
+XFILLER_5_569 VPWR VGND sg13g2_decap_8
+XFILLER_0_252 VPWR VGND sg13g2_decap_8
+XFILLER_0_285 VPWR VGND sg13g2_fill_1
+XFILLER_1_786 VPWR VGND sg13g2_decap_8
+XFILLER_49_779 VPWR VGND sg13g2_decap_8
+XFILLER_27_952 VPWR VGND sg13g2_decap_8
+X_293_ net37 VGND VPWR _030_ data\[22\] clknet_4_15_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_1_583 VPWR VGND sg13g2_decap_8
+XFILLER_49_521 VPWR VGND sg13g2_decap_8
+XFILLER_3_46 VPWR VGND sg13g2_decap_8
+XFILLER_49_598 VPWR VGND sg13g2_decap_8
+XFILLER_12_11 VPWR VGND sg13g2_decap_8
+XFILLER_2_336 VPWR VGND sg13g2_decap_8
+XFILLER_46_557 VPWR VGND sg13g2_decap_8
+XFILLER_46_513 VPWR VGND sg13g2_decap_8
+XFILLER_27_793 VPWR VGND sg13g2_decap_8
+X_276_ net43 VGND VPWR _013_ data\[5\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+X_345_ net44 VGND VPWR _082_ data\[74\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_130 VPWR VGND sg13g2_decap_8
+XFILLER_49_351 VPWR VGND sg13g2_decap_8
+XFILLER_18_793 VPWR VGND sg13g2_decap_8
+XFILLER_0_818 VPWR VGND sg13g2_decap_8
+XFILLER_23_21 VPWR VGND sg13g2_decap_8
+X_130_ data\[80\] data\[81\] data\[82\] _097_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_144 VPWR VGND sg13g2_decap_8
+XFILLER_48_84 VPWR VGND sg13g2_decap_8
+XFILLER_47_833 VPWR VGND sg13g2_decap_8
+XFILLER_3_656 VPWR VGND sg13g2_decap_8
+XFILLER_0_14 VPWR VGND sg13g2_decap_8
+X_259_ VGND VPWR _096_ net22 _091_ _126_ sg13g2_a21oi_1
+X_328_ net34 VGND VPWR _065_ data\[57\] clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_799 VPWR VGND sg13g2_decap_8
+XFILLER_38_800 VPWR VGND sg13g2_decap_8
+XFILLER_4_409 VPWR VGND sg13g2_fill_1
+XFILLER_0_615 VPWR VGND sg13g2_decap_8
+XFILLER_18_54 VPWR VGND sg13g2_fill_2
+XFILLER_29_855 VPWR VGND sg13g2_decap_8
+XFILLER_44_825 VPWR VGND sg13g2_decap_8
+XFILLER_47_630 VPWR VGND sg13g2_decap_8
+XFILLER_35_814 VPWR VGND sg13g2_decap_8
+XFILLER_41_0 VPWR VGND sg13g2_decap_8
+XFILLER_26_814 VPWR VGND sg13g2_decap_8
+XFILLER_41_828 VPWR VGND sg13g2_decap_8
+XFILLER_17_814 VPWR VGND sg13g2_decap_8
+XFILLER_25_891 VPWR VGND sg13g2_decap_8
+XFILLER_45_63 VPWR VGND sg13g2_decap_8
+XFILLER_44_699 VPWR VGND sg13g2_decap_8
+XFILLER_6_46 VPWR VGND sg13g2_decap_8
+XFILLER_4_795 VPWR VGND sg13g2_decap_8
+XFILLER_13_4 VPWR VGND sg13g2_decap_4
+XFILLER_23_828 VPWR VGND sg13g2_decap_8
+XFILLER_31_861 VPWR VGND sg13g2_fill_1
+XFILLER_14_828 VPWR VGND sg13g2_decap_8
+XFILLER_31_32 VPWR VGND sg13g2_decap_4
+XFILLER_0_231 VPWR VGND sg13g2_decap_8
+XFILLER_1_765 VPWR VGND sg13g2_decap_8
+Xoutput8 net8 uio_out[2] VPWR VGND sg13g2_buf_1
+Xoutput10 net10 uio_out[4] VPWR VGND sg13g2_buf_1
+XFILLER_5_548 VPWR VGND sg13g2_decap_8
+XFILLER_49_703 VPWR VGND sg13g2_decap_8
+XFILLER_49_758 VPWR VGND sg13g2_decap_8
+XFILLER_48_257 VPWR VGND sg13g2_decap_4
+XFILLER_9_821 VPWR VGND sg13g2_decap_8
+XFILLER_44_474 VPWR VGND sg13g2_fill_2
+XFILLER_4_592 VPWR VGND sg13g2_decap_8
+XFILLER_27_931 VPWR VGND sg13g2_decap_8
+XFILLER_46_739 VPWR VGND sg13g2_decap_4
+XFILLER_45_227 VPWR VGND sg13g2_decap_8
+X_292_ net42 VGND VPWR _029_ data\[21\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_42 VPWR VGND sg13g2_decap_8
+XFILLER_5_389 VPWR VGND sg13g2_decap_4
+XFILLER_1_562 VPWR VGND sg13g2_decap_8
+XFILLER_49_500 VPWR VGND sg13g2_decap_8
+XFILLER_3_25 VPWR VGND sg13g2_decap_8
+XFILLER_49_577 VPWR VGND sg13g2_decap_8
+XFILLER_2_315 VPWR VGND sg13g2_decap_8
+XFILLER_27_772 VPWR VGND sg13g2_decap_8
+XFILLER_46_536 VPWR VGND sg13g2_fill_1
+XFILLER_37_42 VPWR VGND sg13g2_decap_8
+X_275_ net40 VGND VPWR _012_ data\[4\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+X_344_ net44 VGND VPWR _081_ data\[73\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_786 VPWR VGND sg13g2_decap_8
+XFILLER_45_7 VPWR VGND sg13g2_decap_8
+XFILLER_49_330 VPWR VGND sg13g2_decap_8
+XFILLER_18_772 VPWR VGND sg13g2_decap_8
+XFILLER_33_786 VPWR VGND sg13g2_decap_8
+XFILLER_23_11 VPWR VGND sg13g2_fill_2
+XFILLER_24_786 VPWR VGND sg13g2_decap_8
+XFILLER_2_123 VPWR VGND sg13g2_decap_8
+XFILLER_3_635 VPWR VGND sg13g2_decap_8
+XFILLER_48_63 VPWR VGND sg13g2_decap_8
+XFILLER_47_812 VPWR VGND sg13g2_decap_8
+XFILLER_15_786 VPWR VGND sg13g2_decap_8
+X_189_ data\[13\] data\[14\] net19 _022_ VPWR VGND sg13g2_mux2_1
+X_258_ data\[82\] net21 _126_ VPWR VGND sg13g2_nor2_1
+X_327_ net34 VGND VPWR _064_ data\[56\] clknet_4_7_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_778 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_9_0_clk_regs clknet_0_clk_regs clknet_4_9_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_49_193 VPWR VGND sg13g2_decap_8
+XFILLER_29_834 VPWR VGND sg13g2_decap_8
+XFILLER_47_119 VPWR VGND sg13g2_decap_8
+XFILLER_44_804 VPWR VGND sg13g2_decap_8
+XFILLER_34_21 VPWR VGND sg13g2_decap_8
+XFILLER_1_0 VPWR VGND sg13g2_decap_8
+XFILLER_3_432 VPWR VGND sg13g2_decap_8
+XFILLER_47_686 VPWR VGND sg13g2_decap_8
+XFILLER_7_793 VPWR VGND sg13g2_decap_8
+XFILLER_34_0 VPWR VGND sg13g2_decap_8
+XFILLER_1_91 VPWR VGND sg13g2_decap_8
+XFILLER_41_807 VPWR VGND sg13g2_decap_8
+XFILLER_0_424 VPWR VGND sg13g2_decap_8
+XFILLER_4_229 VPWR VGND sg13g2_decap_8
+XFILLER_0_479 VPWR VGND sg13g2_decap_8
+XFILLER_44_612 VPWR VGND sg13g2_decap_8
+XFILLER_25_870 VPWR VGND sg13g2_decap_8
+XFILLER_45_42 VPWR VGND sg13g2_decap_8
+XFILLER_44_678 VPWR VGND sg13g2_fill_1
+XFILLER_32_807 VPWR VGND sg13g2_decap_8
+XFILLER_6_25 VPWR VGND sg13g2_decap_8
+XFILLER_4_774 VPWR VGND sg13g2_decap_8
+XFILLER_23_807 VPWR VGND sg13g2_decap_8
+XFILLER_47_483 VPWR VGND sg13g2_decap_8
+XFILLER_14_807 VPWR VGND sg13g2_decap_8
+XFILLER_5_527 VPWR VGND sg13g2_decap_4
+XFILLER_31_55 VPWR VGND sg13g2_fill_1
+XFILLER_31_11 VPWR VGND sg13g2_decap_8
+XFILLER_0_210 VPWR VGND sg13g2_decap_8
+XFILLER_1_744 VPWR VGND sg13g2_decap_8
+Xoutput9 net9 uio_out[3] VPWR VGND sg13g2_buf_1
+Xoutput11 net11 uio_out[5] VPWR VGND sg13g2_buf_1
+XFILLER_49_737 VPWR VGND sg13g2_decap_8
+XFILLER_44_431 VPWR VGND sg13g2_fill_2
+XFILLER_44_420 VPWR VGND sg13g2_fill_1
+XFILLER_9_800 VPWR VGND sg13g2_decap_8
+XFILLER_48_781 VPWR VGND sg13g2_decap_8
+XFILLER_26_11 VPWR VGND sg13g2_fill_2
+XFILLER_26_55 VPWR VGND sg13g2_fill_1
+XFILLER_27_910 VPWR VGND sg13g2_decap_8
+XFILLER_27_987 VPWR VGND sg13g2_decap_8
+XFILLER_46_718 VPWR VGND sg13g2_decap_8
+XFILLER_10_821 VPWR VGND sg13g2_decap_8
+X_291_ net42 VGND VPWR _028_ data\[20\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_54 VPWR VGND sg13g2_fill_2
+XFILLER_42_21 VPWR VGND sg13g2_decap_8
+XFILLER_6_814 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_11_0_clk_regs clknet_0_clk_regs clknet_4_11_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_5_357 VPWR VGND sg13g2_decap_8
+XFILLER_49_556 VPWR VGND sg13g2_decap_8
+XFILLER_45_784 VPWR VGND sg13g2_decap_8
+XFILLER_3_817 VPWR VGND sg13g2_decap_8
+XFILLER_37_21 VPWR VGND sg13g2_decap_8
+XFILLER_42_765 VPWR VGND sg13g2_decap_8
+X_274_ net39 VGND VPWR _011_ data\[3\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+X_343_ net45 VGND VPWR _080_ data\[72\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_187 VPWR VGND sg13g2_decap_8
+XFILLER_38_7 VPWR VGND sg13g2_decap_8
+XFILLER_49_386 VPWR VGND sg13g2_decap_8
+XFILLER_45_581 VPWR VGND sg13g2_decap_8
+XFILLER_33_765 VPWR VGND sg13g2_decap_8
+XFILLER_24_765 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_60 VPWR VGND uo_out[6] sg13g2_tielo
+XFILLER_2_102 VPWR VGND sg13g2_decap_8
+XFILLER_2_179 VPWR VGND sg13g2_decap_8
+XFILLER_3_614 VPWR VGND sg13g2_decap_8
+XFILLER_3_4 VPWR VGND sg13g2_decap_8
+XFILLER_0_49 VPWR VGND sg13g2_decap_8
+XFILLER_48_42 VPWR VGND sg13g2_decap_8
+XFILLER_46_356 VPWR VGND sg13g2_decap_4
+XFILLER_46_301 VPWR VGND sg13g2_decap_8
+XFILLER_15_765 VPWR VGND sg13g2_decap_8
+XFILLER_9_25 VPWR VGND sg13g2_decap_4
+X_326_ net33 VGND VPWR _063_ data\[55\] clknet_4_7_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_46_389 VPWR VGND sg13g2_decap_4
+X_188_ data\[12\] data\[13\] net19 _021_ VPWR VGND sg13g2_mux2_1
+X_257_ data\[82\] data\[81\] net29 _090_ VPWR VGND sg13g2_mux2_1
+XFILLER_49_172 VPWR VGND sg13g2_decap_8
+XFILLER_21_779 VPWR VGND sg13g2_decap_8
+XFILLER_29_813 VPWR VGND sg13g2_decap_8
+XFILLER_12_779 VPWR VGND sg13g2_decap_8
+XFILLER_47_665 VPWR VGND sg13g2_decap_8
+XFILLER_46_197 VPWR VGND sg13g2_fill_1
+XFILLER_46_186 VPWR VGND sg13g2_decap_4
+X_309_ net37 VGND VPWR _046_ data\[38\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_43_860 VPWR VGND sg13g2_fill_2
+XFILLER_7_772 VPWR VGND sg13g2_decap_8
+XFILLER_27_0 VPWR VGND sg13g2_decap_8
+XFILLER_1_70 VPWR VGND sg13g2_decap_8
+XFILLER_5_709 VPWR VGND sg13g2_decap_8
+XFILLER_29_11 VPWR VGND sg13g2_decap_8
+XFILLER_45_21 VPWR VGND sg13g2_decap_8
+XFILLER_45_98 VPWR VGND sg13g2_decap_8
+XFILLER_4_753 VPWR VGND sg13g2_decap_8
+XFILLER_3_252 VPWR VGND sg13g2_decap_8
+Xoutput12 net12 uio_out[6] VPWR VGND sg13g2_buf_1
+XFILLER_5_506 VPWR VGND sg13g2_decap_8
+XFILLER_1_723 VPWR VGND sg13g2_decap_8
+XFILLER_44_476 VPWR VGND sg13g2_fill_1
+XFILLER_48_760 VPWR VGND sg13g2_decap_8
+XFILLER_27_966 VPWR VGND sg13g2_decap_8
+XFILLER_39_793 VPWR VGND sg13g2_decap_8
+XFILLER_10_800 VPWR VGND sg13g2_decap_8
+X_290_ net43 VGND VPWR _027_ data\[19\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_336 VPWR VGND sg13g2_decap_8
+XFILLER_1_597 VPWR VGND sg13g2_decap_8
+XFILLER_49_535 VPWR VGND sg13g2_decap_8
+XFILLER_45_763 VPWR VGND sg13g2_decap_8
+XFILLER_44_284 VPWR VGND sg13g2_fill_1
+XFILLER_12_25 VPWR VGND sg13g2_decap_4
+XFILLER_46_527 VPWR VGND sg13g2_decap_8
+X_342_ net44 VGND VPWR _079_ data\[71\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+X_273_ net39 VGND VPWR _010_ data\[2\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_144 VPWR VGND sg13g2_decap_8
+XFILLER_49_365 VPWR VGND sg13g2_decap_8
+XFILLER_4_81 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_61 VPWR VGND uo_out[7] sg13g2_tielo
+Xheichips25_internal_50 VPWR VGND uio_oe[4] sg13g2_tielo
+XFILLER_2_158 VPWR VGND sg13g2_decap_8
+XFILLER_48_21 VPWR VGND sg13g2_decap_8
+XFILLER_0_28 VPWR VGND sg13g2_decap_8
+XFILLER_48_98 VPWR VGND sg13g2_decap_8
+XFILLER_47_847 VPWR VGND sg13g2_decap_8
+X_325_ net33 VGND VPWR _062_ data\[54\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+X_187_ data\[11\] data\[12\] net21 _020_ VPWR VGND sg13g2_mux2_1
+X_256_ data\[80\] data\[81\] net21 _089_ VPWR VGND sg13g2_mux2_1
+XFILLER_29_4 VPWR VGND sg13g2_decap_8
+XFILLER_49_151 VPWR VGND sg13g2_decap_8
+XFILLER_38_814 VPWR VGND sg13g2_fill_2
+XFILLER_2_681 VPWR VGND sg13g2_decap_8
+XFILLER_0_629 VPWR VGND sg13g2_decap_8
+Xu_delay_line VPWR VGND clknet_1_0__leaf_clk clk_delayed net44 data\[75\] data\[76\]
++ data\[77\] data\[67\] data\[68\] data\[69\] data\[70\] data\[71\] data\[72\] data\[73\]
++ data\[74\] delay_line
+Xclkload0 VPWR clkload0/Y clknet_4_7_0_clk_regs VGND sg13g2_inv_1
+XFILLER_3_412 VPWR VGND sg13g2_decap_8
+XFILLER_47_644 VPWR VGND sg13g2_decap_8
+XFILLER_35_828 VPWR VGND sg13g2_decap_8
+X_239_ data\[63\] data\[64\] net14 _072_ VPWR VGND sg13g2_mux2_1
+X_308_ net37 VGND VPWR _045_ data\[37\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_26_828 VPWR VGND sg13g2_decap_8
+XFILLER_20_47 VPWR VGND sg13g2_decap_8
+XFILLER_17_828 VPWR VGND sg13g2_decap_8
+XFILLER_45_77 VPWR VGND sg13g2_decap_8
+XFILLER_4_732 VPWR VGND sg13g2_decap_8
+XFILLER_20_8 VPWR VGND sg13g2_fill_2
+XFILLER_31_831 VPWR VGND sg13g2_fill_1
+XFILLER_15_25 VPWR VGND sg13g2_decap_4
+XFILLER_1_702 VPWR VGND sg13g2_decap_8
+Xoutput13 net13 uio_out[7] VPWR VGND sg13g2_buf_1
+XFILLER_0_245 VPWR VGND sg13g2_decap_8
+XFILLER_0_278 VPWR VGND sg13g2_decap_8
+XFILLER_1_779 VPWR VGND sg13g2_decap_8
+XFILLER_49_717 VPWR VGND sg13g2_decap_8
+XFILLER_0_790 VPWR VGND sg13g2_decap_8
+XFILLER_11_4 VPWR VGND sg13g2_decap_8
+XFILLER_47_293 VPWR VGND sg13g2_fill_2
+XFILLER_39_772 VPWR VGND sg13g2_decap_8
+XFILLER_26_13 VPWR VGND sg13g2_fill_1
+XFILLER_27_945 VPWR VGND sg13g2_decap_8
+XFILLER_1_576 VPWR VGND sg13g2_decap_8
+XFILLER_49_514 VPWR VGND sg13g2_decap_8
+XFILLER_3_39 VPWR VGND sg13g2_decap_8
+XFILLER_45_742 VPWR VGND sg13g2_decap_8
+XFILLER_4_370 VPWR VGND sg13g2_fill_1
+XFILLER_36_797 VPWR VGND sg13g2_decap_8
+XFILLER_27_786 VPWR VGND sg13g2_decap_8
+X_272_ net38 VGND VPWR _009_ data\[1\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+X_341_ net44 VGND VPWR _078_ data\[70\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_123 VPWR VGND sg13g2_decap_8
+XFILLER_49_344 VPWR VGND sg13g2_decap_8
+XFILLER_18_786 VPWR VGND sg13g2_decap_8
+XFILLER_4_60 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_51 VPWR VGND uio_oe[5] sg13g2_tielo
+XFILLER_2_137 VPWR VGND sg13g2_decap_8
+XFILLER_3_649 VPWR VGND sg13g2_decap_8
+XFILLER_48_77 VPWR VGND sg13g2_decap_8
+XFILLER_47_826 VPWR VGND sg13g2_decap_8
+X_255_ data\[79\] data\[80\] net21 _088_ VPWR VGND sg13g2_mux2_1
+X_324_ net33 VGND VPWR _061_ data\[53\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+X_186_ data\[10\] data\[11\] net21 _019_ VPWR VGND sg13g2_mux2_1
+XFILLER_43_7 VPWR VGND sg13g2_decap_8
+XFILLER_2_660 VPWR VGND sg13g2_decap_8
+XFILLER_49_130 VPWR VGND sg13g2_decap_8
+XFILLER_0_608 VPWR VGND sg13g2_decap_8
+XFILLER_18_47 VPWR VGND sg13g2_decap_8
+XFILLER_29_848 VPWR VGND sg13g2_decap_8
+XFILLER_44_818 VPWR VGND sg13g2_decap_8
+Xclkload1 VPWR clkload1/Y clknet_4_15_0_clk_regs VGND sg13g2_inv_1
+XFILLER_34_35 VPWR VGND sg13g2_decap_4
+XFILLER_3_468 VPWR VGND sg13g2_decap_8
+XFILLER_3_446 VPWR VGND sg13g2_decap_4
+XFILLER_47_623 VPWR VGND sg13g2_decap_8
+XFILLER_46_133 VPWR VGND sg13g2_fill_2
+XFILLER_35_807 VPWR VGND sg13g2_decap_8
+X_169_ u_shift_reg.bit_count\[1\] net29 _114_ _122_ _123_ VPWR VGND sg13g2_and4_1
+X_238_ data\[62\] data\[63\] net14 _071_ VPWR VGND sg13g2_mux2_1
+X_307_ net37 VGND VPWR _044_ data\[36\] clknet_4_15_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_490 VPWR VGND sg13g2_decap_8
+XFILLER_26_807 VPWR VGND sg13g2_decap_8
+XFILLER_0_449 VPWR VGND sg13g2_decap_4
+XFILLER_17_807 VPWR VGND sg13g2_decap_8
+XFILLER_25_884 VPWR VGND sg13g2_decap_8
+XFILLER_45_56 VPWR VGND sg13g2_decap_8
+XFILLER_44_626 VPWR VGND sg13g2_decap_8
+XFILLER_40_821 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_8_0_clk_regs clknet_0_clk_regs clknet_4_8_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_6_39 VPWR VGND sg13g2_decap_8
+XFILLER_40_843 VPWR VGND sg13g2_fill_1
+XFILLER_40_832 VPWR VGND sg13g2_fill_1
+XFILLER_4_788 VPWR VGND sg13g2_decap_8
+XFILLER_4_711 VPWR VGND sg13g2_decap_8
+XFILLER_13_8 VPWR VGND sg13g2_fill_2
+XFILLER_47_497 VPWR VGND sg13g2_decap_8
+XFILLER_31_810 VPWR VGND sg13g2_decap_8
+XFILLER_22_821 VPWR VGND sg13g2_decap_8
+XFILLER_31_36 VPWR VGND sg13g2_fill_2
+XFILLER_31_25 VPWR VGND sg13g2_decap_8
+XFILLER_0_224 VPWR VGND sg13g2_decap_8
+XFILLER_1_758 VPWR VGND sg13g2_decap_8
+XFILLER_13_821 VPWR VGND sg13g2_decap_8
+XFILLER_9_814 VPWR VGND sg13g2_decap_8
+XFILLER_44_467 VPWR VGND sg13g2_decap_8
+XFILLER_4_585 VPWR VGND sg13g2_decap_8
+XFILLER_48_795 VPWR VGND sg13g2_decap_8
+XFILLER_47_261 VPWR VGND sg13g2_fill_2
+XFILLER_27_924 VPWR VGND sg13g2_decap_8
+XFILLER_42_35 VPWR VGND sg13g2_decap_8
+XFILLER_6_828 VPWR VGND sg13g2_decap_8
+XFILLER_27_1022 VPWR VGND sg13g2_decap_8
+XFILLER_3_18 VPWR VGND sg13g2_decap_8
+XFILLER_45_798 VPWR VGND sg13g2_decap_8
+XFILLER_45_721 VPWR VGND sg13g2_decap_8
+XFILLER_4_393 VPWR VGND sg13g2_fill_2
+XFILLER_4_382 VPWR VGND sg13g2_decap_8
+XFILLER_48_592 VPWR VGND sg13g2_decap_8
+XFILLER_2_308 VPWR VGND sg13g2_decap_8
+XFILLER_27_765 VPWR VGND sg13g2_decap_8
+XFILLER_37_35 VPWR VGND sg13g2_decap_8
+X_271_ net38 VGND VPWR _008_ data\[0\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+X_340_ net44 VGND VPWR _077_ data\[69\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_102 VPWR VGND sg13g2_decap_8
+XFILLER_49_323 VPWR VGND sg13g2_decap_8
+XFILLER_18_765 VPWR VGND sg13g2_decap_8
+XFILLER_45_595 VPWR VGND sg13g2_decap_8
+XFILLER_33_779 VPWR VGND sg13g2_decap_8
+XFILLER_24_779 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_10_0_clk_regs clknet_0_clk_regs clknet_4_10_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_2_116 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_52 VPWR VGND uio_oe[6] sg13g2_tielo
+XFILLER_3_628 VPWR VGND sg13g2_decap_8
+XFILLER_48_56 VPWR VGND sg13g2_decap_8
+XFILLER_47_805 VPWR VGND sg13g2_decap_8
+XFILLER_46_315 VPWR VGND sg13g2_fill_2
+XFILLER_15_779 VPWR VGND sg13g2_decap_8
+X_185_ data\[9\] data\[10\] net21 _018_ VPWR VGND sg13g2_mux2_1
+X_254_ data\[78\] data\[79\] net28 _087_ VPWR VGND sg13g2_mux2_1
+X_323_ net30 VGND VPWR _060_ data\[52\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_36_7 VPWR VGND sg13g2_decap_8
+XFILLER_1_182 VPWR VGND sg13g2_decap_8
+XFILLER_49_186 VPWR VGND sg13g2_decap_8
+XFILLER_38_816 VPWR VGND sg13g2_fill_1
+XFILLER_45_381 VPWR VGND sg13g2_fill_2
+XFILLER_29_827 VPWR VGND sg13g2_decap_8
+XFILLER_37_860 VPWR VGND sg13g2_fill_2
+XFILLER_34_14 VPWR VGND sg13g2_decap_8
+XFILLER_20_793 VPWR VGND sg13g2_decap_8
+XFILLER_3_425 VPWR VGND sg13g2_decap_8
+XFILLER_28_860 VPWR VGND sg13g2_fill_2
+XFILLER_47_679 VPWR VGND sg13g2_decap_8
+XFILLER_47_602 VPWR VGND sg13g2_decap_8
+XFILLER_46_112 VPWR VGND sg13g2_decap_8
+X_306_ net35 VGND VPWR _043_ data\[35\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_11_793 VPWR VGND sg13g2_decap_8
+XFILLER_7_786 VPWR VGND sg13g2_decap_8
+X_168_ u_shift_reg.bit_count\[3\] u_shift_reg.bit_count\[4\] _122_ VPWR VGND sg13g2_and2_1
+X_237_ data\[61\] data\[62\] net14 _070_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_84 VPWR VGND sg13g2_decap_8
+XFILLER_46_690 VPWR VGND sg13g2_decap_8
+XFILLER_34_830 VPWR VGND sg13g2_fill_1
+XFILLER_29_25 VPWR VGND sg13g2_decap_4
+XFILLER_44_605 VPWR VGND sg13g2_decap_8
+XFILLER_25_863 VPWR VGND sg13g2_decap_8
+XFILLER_45_35 VPWR VGND sg13g2_decap_8
+XFILLER_40_855 VPWR VGND sg13g2_decap_8
+XFILLER_40_800 VPWR VGND sg13g2_decap_8
+XFILLER_6_18 VPWR VGND sg13g2_decap_8
+XFILLER_3_200 VPWR VGND sg13g2_fill_2
+XFILLER_4_767 VPWR VGND sg13g2_decap_8
+XFILLER_47_476 VPWR VGND sg13g2_decap_8
+XFILLER_22_800 VPWR VGND sg13g2_decap_8
+XFILLER_31_48 VPWR VGND sg13g2_decap_8
+XFILLER_0_203 VPWR VGND sg13g2_decap_8
+XFILLER_1_737 VPWR VGND sg13g2_decap_8
+XFILLER_13_800 VPWR VGND sg13g2_decap_8
+XFILLER_48_774 VPWR VGND sg13g2_decap_8
+XFILLER_47_295 VPWR VGND sg13g2_fill_1
+XFILLER_27_903 VPWR VGND sg13g2_decap_8
+XFILLER_10_814 VPWR VGND sg13g2_decap_8
+XFILLER_42_14 VPWR VGND sg13g2_decap_8
+XFILLER_6_807 VPWR VGND sg13g2_decap_8
+XFILLER_5_306 VPWR VGND sg13g2_fill_2
+XFILLER_1_534 VPWR VGND sg13g2_fill_1
+XFILLER_27_1001 VPWR VGND sg13g2_decap_8
+XFILLER_49_549 VPWR VGND sg13g2_decap_8
+XFILLER_45_777 VPWR VGND sg13g2_decap_8
+XFILLER_45_700 VPWR VGND sg13g2_decap_8
+XFILLER_48_571 VPWR VGND sg13g2_decap_8
+XFILLER_37_14 VPWR VGND sg13g2_decap_8
+X_270_ net38 VGND VPWR _007_ u_shift_reg.bit_count\[6\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_158 VPWR VGND sg13g2_fill_2
+XFILLER_2_821 VPWR VGND sg13g2_decap_8
+XFILLER_49_379 VPWR VGND sg13g2_decap_8
+XFILLER_49_302 VPWR VGND sg13g2_decap_8
+XFILLER_45_574 VPWR VGND sg13g2_decap_8
+XFILLER_5_681 VPWR VGND sg13g2_decap_8
+XFILLER_4_95 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_53 VPWR VGND uio_oe[7] sg13g2_tielo
+XFILLER_3_607 VPWR VGND sg13g2_decap_8
+XFILLER_48_35 VPWR VGND sg13g2_decap_8
+XFILLER_9_18 VPWR VGND sg13g2_decap_8
+X_322_ net30 VGND VPWR _059_ data\[51\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+X_184_ data\[8\] data\[9\] net25 _017_ VPWR VGND sg13g2_mux2_1
+X_253_ data\[78\] data\[77\] net29 _086_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_161 VPWR VGND sg13g2_decap_8
+XFILLER_2_695 VPWR VGND sg13g2_decap_8
+XFILLER_49_165 VPWR VGND sg13g2_decap_8
+XFILLER_29_806 VPWR VGND sg13g2_decap_8
+XFILLER_20_772 VPWR VGND sg13g2_decap_8
+XFILLER_47_658 VPWR VGND sg13g2_decap_8
+XFILLER_46_179 VPWR VGND sg13g2_decap_8
+XFILLER_46_135 VPWR VGND sg13g2_fill_1
+X_305_ net35 VGND VPWR _042_ data\[34\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_11_772 VPWR VGND sg13g2_decap_8
+XFILLER_7_765 VPWR VGND sg13g2_decap_8
+X_167_ _121_ u_shift_reg.bit_count\[3\] _004_ VPWR VGND sg13g2_xor2_1
+X_236_ data\[60\] data\[61\] net16 _069_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_63 VPWR VGND sg13g2_decap_8
+XFILLER_45_14 VPWR VGND sg13g2_decap_8
+XFILLER_25_842 VPWR VGND sg13g2_decap_8
+XFILLER_4_746 VPWR VGND sg13g2_decap_8
+XFILLER_3_245 VPWR VGND sg13g2_decap_8
+XFILLER_47_455 VPWR VGND sg13g2_decap_4
+X_219_ data\[43\] data\[44\] net17 _052_ VPWR VGND sg13g2_mux2_1
+XFILLER_0_259 VPWR VGND sg13g2_fill_2
+XFILLER_1_716 VPWR VGND sg13g2_decap_8
+XFILLER_44_436 VPWR VGND sg13g2_fill_2
+XFILLER_48_753 VPWR VGND sg13g2_decap_8
+XFILLER_47_252 VPWR VGND sg13g2_fill_2
+Xclkbuf_0_clk clknet_0_clk delaynet_0_clk VPWR VGND sg13g2_buf_16
+XFILLER_27_959 VPWR VGND sg13g2_decap_8
+XFILLER_39_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_318 VPWR VGND sg13g2_decap_8
+XFILLER_49_528 VPWR VGND sg13g2_decap_8
+XFILLER_45_756 VPWR VGND sg13g2_decap_8
+XFILLER_44_277 VPWR VGND sg13g2_decap_8
+XFILLER_4_351 VPWR VGND sg13g2_fill_2
+XFILLER_48_550 VPWR VGND sg13g2_decap_8
+XFILLER_12_18 VPWR VGND sg13g2_decap_8
+XFILLER_5_137 VPWR VGND sg13g2_decap_8
+XFILLER_2_800 VPWR VGND sg13g2_decap_8
+XFILLER_49_358 VPWR VGND sg13g2_decap_8
+XFILLER_5_660 VPWR VGND sg13g2_decap_8
+XFILLER_4_74 VPWR VGND sg13g2_decap_8
+XFILLER_23_28 VPWR VGND sg13g2_fill_1
+Xheichips25_internal_54 VPWR VGND uo_out[0] sg13g2_tielo
+XFILLER_48_14 VPWR VGND sg13g2_decap_8
+X_252_ data\[76\] data\[77\] net27 _085_ VPWR VGND sg13g2_mux2_1
+X_321_ net30 VGND VPWR _058_ data\[50\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+Xfanout40 net41 net40 VPWR VGND sg13g2_buf_1
+X_183_ data\[7\] data\[8\] net25 _016_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_140 VPWR VGND sg13g2_decap_8
+XFILLER_49_144 VPWR VGND sg13g2_decap_8
+XFILLER_38_807 VPWR VGND sg13g2_decap_8
+XFILLER_2_674 VPWR VGND sg13g2_decap_8
+XFILLER_48_0 VPWR VGND sg13g2_decap_8
+XFILLER_34_49 VPWR VGND sg13g2_decap_8
+XFILLER_3_405 VPWR VGND sg13g2_decap_8
+XFILLER_47_637 VPWR VGND sg13g2_decap_8
+XFILLER_43_843 VPWR VGND sg13g2_fill_2
+XFILLER_43_821 VPWR VGND sg13g2_fill_2
+X_235_ data\[59\] data\[60\] net16 _068_ VPWR VGND sg13g2_mux2_1
+X_304_ net32 VGND VPWR _041_ data\[33\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+X_166_ VGND VPWR _095_ _120_ _003_ _121_ sg13g2_a21oi_1
+XFILLER_41_7 VPWR VGND sg13g2_decap_8
+XFILLER_1_42 VPWR VGND sg13g2_decap_8
+XFILLER_34_821 VPWR VGND sg13g2_decap_8
+XFILLER_25_821 VPWR VGND sg13g2_decap_8
+XFILLER_25_898 VPWR VGND sg13g2_decap_8
+XFILLER_4_725 VPWR VGND sg13g2_decap_8
+XFILLER_3_213 VPWR VGND sg13g2_fill_1
+XFILLER_3_202 VPWR VGND sg13g2_fill_1
+Xclkbuf_regs_0_clk clk_regs clk VPWR VGND sg13g2_buf_16
+XFILLER_16_821 VPWR VGND sg13g2_decap_8
+XFILLER_31_824 VPWR VGND sg13g2_decap_8
+X_149_ net11 _108_ _109_ VPWR VGND sg13g2_nand2_1
+X_218_ data\[42\] data\[43\] net17 _051_ VPWR VGND sg13g2_mux2_1
+XFILLER_15_18 VPWR VGND sg13g2_decap_8
+XFILLER_0_238 VPWR VGND sg13g2_decap_8
+XFILLER_44_426 VPWR VGND sg13g2_fill_1
+XFILLER_9_828 VPWR VGND sg13g2_decap_8
+XFILLER_4_599 VPWR VGND sg13g2_decap_8
+XFILLER_0_783 VPWR VGND sg13g2_decap_8
+XFILLER_48_732 VPWR VGND sg13g2_decap_8
+XFILLER_47_286 VPWR VGND sg13g2_decap_8
+XFILLER_47_231 VPWR VGND sg13g2_fill_1
+XFILLER_46_91 VPWR VGND sg13g2_decap_8
+XFILLER_27_938 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_7_0_clk_regs clknet_0_clk_regs clknet_4_7_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_39_765 VPWR VGND sg13g2_decap_8
+XFILLER_42_49 VPWR VGND sg13g2_fill_1
+XFILLER_1_569 VPWR VGND sg13g2_decap_8
+XFILLER_49_507 VPWR VGND sg13g2_decap_8
+XFILLER_45_735 VPWR VGND sg13g2_decap_8
+XFILLER_26_993 VPWR VGND sg13g2_decap_8
+XFILLER_0_580 VPWR VGND sg13g2_decap_8
+XFILLER_4_363 VPWR VGND sg13g2_decap_8
+XFILLER_44_790 VPWR VGND sg13g2_decap_8
+XFILLER_37_49 VPWR VGND sg13g2_decap_8
+XFILLER_27_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_116 VPWR VGND sg13g2_decap_8
+XFILLER_49_337 VPWR VGND sg13g2_decap_8
+XFILLER_18_779 VPWR VGND sg13g2_decap_8
+XFILLER_41_793 VPWR VGND sg13g2_decap_8
+XFILLER_4_53 VPWR VGND sg13g2_decap_8
+XFILLER_49_860 VPWR VGND sg13g2_fill_2
+XFILLER_48_381 VPWR VGND sg13g2_decap_4
+Xheichips25_internal_55 VPWR VGND uo_out[1] sg13g2_tielo
+XFILLER_32_793 VPWR VGND sg13g2_decap_8
+XFILLER_47_819 VPWR VGND sg13g2_decap_8
+XFILLER_23_793 VPWR VGND sg13g2_decap_8
+X_182_ data\[6\] data\[7\] net25 _015_ VPWR VGND sg13g2_mux2_1
+X_251_ data\[75\] data\[76\] net27 _084_ VPWR VGND sg13g2_mux2_1
+X_320_ net30 VGND VPWR _057_ data\[49\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+Xfanout41 net1 net41 VPWR VGND sg13g2_buf_1
+Xfanout30 net31 net30 VPWR VGND sg13g2_buf_1
+XFILLER_1_196 VPWR VGND sg13g2_decap_8
+XFILLER_49_123 VPWR VGND sg13g2_decap_8
+XFILLER_2_653 VPWR VGND sg13g2_decap_8
+XFILLER_46_841 VPWR VGND sg13g2_decap_8
+XFILLER_45_340 VPWR VGND sg13g2_fill_1
+XFILLER_14_793 VPWR VGND sg13g2_decap_8
+XFILLER_34_28 VPWR VGND sg13g2_decap_8
+XFILLER_3_439 VPWR VGND sg13g2_fill_2
+XFILLER_1_7 VPWR VGND sg13g2_decap_8
+XFILLER_47_616 VPWR VGND sg13g2_decap_8
+XFILLER_46_126 VPWR VGND sg13g2_decap_8
+XFILLER_43_800 VPWR VGND sg13g2_decap_8
+X_165_ _121_ u_shift_reg.bit_count\[1\] net29 _114_ VPWR VGND sg13g2_and3_1
+X_234_ data\[58\] data\[59\] net16 _067_ VPWR VGND sg13g2_mux2_1
+X_303_ net32 VGND VPWR _040_ data\[32\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_34_7 VPWR VGND sg13g2_decap_8
+XFILLER_1_21 VPWR VGND sg13g2_decap_8
+XFILLER_1_98 VPWR VGND sg13g2_decap_8
+XFILLER_34_800 VPWR VGND sg13g2_decap_8
+XFILLER_25_800 VPWR VGND sg13g2_decap_8
+XFILLER_25_877 VPWR VGND sg13g2_decap_8
+XFILLER_45_49 VPWR VGND sg13g2_decap_8
+XFILLER_44_619 VPWR VGND sg13g2_decap_8
+XFILLER_40_814 VPWR VGND sg13g2_decap_8
+XFILLER_4_704 VPWR VGND sg13g2_decap_8
+XFILLER_16_800 VPWR VGND sg13g2_decap_8
+XFILLER_31_803 VPWR VGND sg13g2_decap_8
+X_148_ _109_ _104_ clk2_out _102_ u_custom_cells.u_latch0.Q VPWR VGND sg13g2_a22oi_1
+X_217_ data\[41\] data\[42\] net17 _050_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_280 VPWR VGND sg13g2_fill_2
+XFILLER_32_4 VPWR VGND sg13g2_decap_8
+XFILLER_22_814 VPWR VGND sg13g2_decap_8
+XFILLER_31_18 VPWR VGND sg13g2_decap_8
+XFILLER_0_217 VPWR VGND sg13g2_decap_8
+XFILLER_13_814 VPWR VGND sg13g2_decap_8
+XFILLER_9_807 VPWR VGND sg13g2_decap_8
+XFILLER_44_416 VPWR VGND sg13g2_decap_4
+XFILLER_0_762 VPWR VGND sg13g2_decap_8
+XFILLER_48_711 VPWR VGND sg13g2_decap_8
+XFILLER_48_788 VPWR VGND sg13g2_decap_8
+XFILLER_46_70 VPWR VGND sg13g2_decap_8
+XFILLER_7_42 VPWR VGND sg13g2_decap_8
+XFILLER_27_917 VPWR VGND sg13g2_decap_8
+XFILLER_10_828 VPWR VGND sg13g2_decap_8
+XFILLER_42_28 VPWR VGND sg13g2_decap_8
+XFILLER_27_1015 VPWR VGND sg13g2_decap_8
+XFILLER_45_714 VPWR VGND sg13g2_decap_8
+XFILLER_26_972 VPWR VGND sg13g2_decap_8
+XFILLER_5_821 VPWR VGND sg13g2_decap_8
+XFILLER_4_375 VPWR VGND sg13g2_decap_8
+XFILLER_4_353 VPWR VGND sg13g2_fill_1
+XFILLER_48_585 VPWR VGND sg13g2_decap_8
+XFILLER_37_28 VPWR VGND sg13g2_decap_8
+XFILLER_49_316 VPWR VGND sg13g2_decap_8
+XFILLER_45_588 VPWR VGND sg13g2_decap_8
+XFILLER_41_772 VPWR VGND sg13g2_decap_8
+XFILLER_5_695 VPWR VGND sg13g2_decap_8
+XFILLER_4_32 VPWR VGND sg13g2_decap_8
+XFILLER_48_360 VPWR VGND sg13g2_decap_8
+XFILLER_32_772 VPWR VGND sg13g2_decap_8
+XFILLER_2_109 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_56 VPWR VGND uo_out[2] sg13g2_tielo
+XFILLER_48_49 VPWR VGND sg13g2_decap_8
+XFILLER_46_308 VPWR VGND sg13g2_decap_8
+XFILLER_23_772 VPWR VGND sg13g2_decap_8
+X_181_ data\[5\] data\[6\] net25 _014_ VPWR VGND sg13g2_mux2_1
+X_250_ data\[74\] data\[75\] net27 _083_ VPWR VGND sg13g2_mux2_1
+Xfanout42 net43 net42 VPWR VGND sg13g2_buf_1
+Xfanout31 net32 net31 VPWR VGND sg13g2_buf_1
+Xfanout20 net23 net20 VPWR VGND sg13g2_buf_1
+XFILLER_2_632 VPWR VGND sg13g2_decap_8
+XFILLER_1_175 VPWR VGND sg13g2_decap_8
+XFILLER_49_179 VPWR VGND sg13g2_decap_8
+XFILLER_49_102 VPWR VGND sg13g2_decap_8
+XFILLER_46_820 VPWR VGND sg13g2_decap_8
+XFILLER_14_772 VPWR VGND sg13g2_decap_8
+XFILLER_5_492 VPWR VGND sg13g2_decap_8
+XFILLER_37_853 VPWR VGND sg13g2_decap_8
+XFILLER_20_786 VPWR VGND sg13g2_decap_8
+XFILLER_28_842 VPWR VGND sg13g2_decap_8
+XFILLER_46_105 VPWR VGND sg13g2_decap_8
+X_302_ net32 VGND VPWR _039_ data\[31\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_43_856 VPWR VGND sg13g2_decap_4
+XFILLER_11_786 VPWR VGND sg13g2_decap_8
+XFILLER_7_779 VPWR VGND sg13g2_decap_8
+X_164_ _002_ u_shift_reg.bit_count\[1\] _118_ VPWR VGND sg13g2_xnor2_1
+X_233_ data\[57\] data\[58\] net18 _066_ VPWR VGND sg13g2_mux2_1
+XFILLER_27_7 VPWR VGND sg13g2_decap_8
+XFILLER_49_81 VPWR VGND sg13g2_decap_8
+XFILLER_1_77 VPWR VGND sg13g2_decap_8
+XFILLER_46_683 VPWR VGND sg13g2_decap_8
+XFILLER_45_182 VPWR VGND sg13g2_fill_1
+XFILLER_29_18 VPWR VGND sg13g2_decap_8
+XFILLER_25_856 VPWR VGND sg13g2_decap_8
+XFILLER_45_28 VPWR VGND sg13g2_decap_8
+XFILLER_40_848 VPWR VGND sg13g2_decap_8
+XFILLER_10_53 VPWR VGND sg13g2_fill_2
+XFILLER_3_259 VPWR VGND sg13g2_decap_8
+XFILLER_47_469 VPWR VGND sg13g2_decap_8
+XFILLER_31_859 VPWR VGND sg13g2_fill_2
+X_147_ _108_ adc_data\[5\] _100_ VPWR VGND sg13g2_nand2_1
+X_216_ data\[40\] data\[41\] net17 _049_ VPWR VGND sg13g2_mux2_1
+XFILLER_25_4 VPWR VGND sg13g2_fill_2
+XFILLER_2_292 VPWR VGND sg13g2_decap_4
+XFILLER_3_782 VPWR VGND sg13g2_decap_8
+XFILLER_0_741 VPWR VGND sg13g2_decap_8
+XFILLER_47_222 VPWR VGND sg13g2_fill_1
+XFILLER_48_767 VPWR VGND sg13g2_decap_8
+XFILLER_7_21 VPWR VGND sg13g2_decap_8
+XFILLER_16_0 VPWR VGND sg13g2_fill_2
+XFILLER_10_807 VPWR VGND sg13g2_decap_8
+XFILLER_1_527 VPWR VGND sg13g2_decap_8
+XFILLER_26_951 VPWR VGND sg13g2_decap_8
+XFILLER_5_800 VPWR VGND sg13g2_decap_8
+XFILLER_4_398 VPWR VGND sg13g2_decap_8
+XFILLER_48_564 VPWR VGND sg13g2_decap_8
+XFILLER_2_814 VPWR VGND sg13g2_decap_8
+XFILLER_5_674 VPWR VGND sg13g2_decap_8
+XFILLER_4_88 VPWR VGND sg13g2_decap_8
+XFILLER_4_151 VPWR VGND sg13g2_decap_8
+XFILLER_4_11 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_57 VPWR VGND uo_out[3] sg13g2_tielo
+XFILLER_48_28 VPWR VGND sg13g2_decap_8
+Xfanout21 net22 net21 VPWR VGND sg13g2_buf_1
+X_180_ data\[4\] data\[5\] net25 _013_ VPWR VGND sg13g2_mux2_1
+Xfanout43 net46 net43 VPWR VGND sg13g2_buf_1
+Xfanout32 net41 net32 VPWR VGND sg13g2_buf_1
+XFILLER_1_154 VPWR VGND sg13g2_decap_8
+XFILLER_2_611 VPWR VGND sg13g2_decap_8
+XFILLER_2_688 VPWR VGND sg13g2_decap_8
+XFILLER_49_158 VPWR VGND sg13g2_decap_8
+XFILLER_45_331 VPWR VGND sg13g2_decap_8
+XFILLER_37_821 VPWR VGND sg13g2_decap_4
+XFILLER_20_765 VPWR VGND sg13g2_decap_8
+XFILLER_3_419 VPWR VGND sg13g2_fill_1
+XFILLER_28_821 VPWR VGND sg13g2_decap_8
+X_232_ data\[56\] data\[57\] net18 _065_ VPWR VGND sg13g2_mux2_1
+X_301_ net35 VGND VPWR _038_ data\[30\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_11_765 VPWR VGND sg13g2_decap_8
+X_163_ u_shift_reg.bit_count\[1\] net29 u_shift_reg.bit_count\[0\] _120_ VPWR VGND
++ sg13g2_nand3_1
+XFILLER_2_452 VPWR VGND sg13g2_decap_8
+XFILLER_49_60 VPWR VGND sg13g2_decap_8
+XFILLER_19_821 VPWR VGND sg13g2_decap_8
+XFILLER_1_56 VPWR VGND sg13g2_decap_8
+XFILLER_46_662 VPWR VGND sg13g2_decap_8
+XFILLER_46_0 VPWR VGND sg13g2_decap_8
+XFILLER_25_835 VPWR VGND sg13g2_decap_8
+XFILLER_4_739 VPWR VGND sg13g2_decap_8
+XFILLER_10_32 VPWR VGND sg13g2_decap_8
+XFILLER_47_459 VPWR VGND sg13g2_fill_2
+XFILLER_47_448 VPWR VGND sg13g2_decap_8
+X_215_ data\[39\] data\[40\] net17 _048_ VPWR VGND sg13g2_mux2_1
+X_146_ net10 _106_ _107_ VPWR VGND sg13g2_nand2_1
+XFILLER_3_761 VPWR VGND sg13g2_decap_8
+XFILLER_18_4 VPWR VGND sg13g2_decap_4
+XFILLER_1_709 VPWR VGND sg13g2_decap_8
+XFILLER_4_547 VPWR VGND sg13g2_fill_1
+XFILLER_0_720 VPWR VGND sg13g2_decap_8
+XFILLER_0_797 VPWR VGND sg13g2_decap_8
+XFILLER_48_746 VPWR VGND sg13g2_decap_8
+XFILLER_47_245 VPWR VGND sg13g2_fill_2
+X_129_ VPWR _096_ data\[83\] VGND sg13g2_inv_1
+XFILLER_39_779 VPWR VGND sg13g2_decap_8
+XFILLER_26_930 VPWR VGND sg13g2_decap_8
+XFILLER_45_749 VPWR VGND sg13g2_decap_8
+XFILLER_4_344 VPWR VGND sg13g2_decap_8
+XFILLER_0_594 VPWR VGND sg13g2_decap_8
+XFILLER_48_543 VPWR VGND sg13g2_decap_8
+XFILLER_35_793 VPWR VGND sg13g2_decap_8
+XFILLER_26_793 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_6_0_clk_regs clknet_0_clk_regs clknet_4_6_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_5_653 VPWR VGND sg13g2_decap_8
+XFILLER_4_130 VPWR VGND sg13g2_decap_8
+XFILLER_0_391 VPWR VGND sg13g2_decap_4
+XFILLER_4_67 VPWR VGND sg13g2_decap_8
+XFILLER_17_793 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_58 VPWR VGND uo_out[4] sg13g2_tielo
+Xheichips25_internal_47 VPWR VGND uio_oe[1] sg13g2_tielo
+Xfanout44 net46 net44 VPWR VGND sg13g2_buf_1
+Xfanout33 net41 net33 VPWR VGND sg13g2_buf_1
+Xfanout22 net23 net22 VPWR VGND sg13g2_buf_1
+XFILLER_13_54 VPWR VGND sg13g2_fill_2
+XFILLER_1_133 VPWR VGND sg13g2_decap_8
+XFILLER_49_137 VPWR VGND sg13g2_decap_8
+XFILLER_2_667 VPWR VGND sg13g2_decap_8
+XFILLER_46_855 VPWR VGND sg13g2_decap_8
+XFILLER_49_682 VPWR VGND sg13g2_decap_8
+XFILLER_37_800 VPWR VGND sg13g2_decap_8
+XFILLER_28_800 VPWR VGND sg13g2_decap_8
+XFILLER_43_814 VPWR VGND sg13g2_decap_8
+X_162_ _118_ _119_ _001_ VPWR VGND sg13g2_and2_1
+X_231_ data\[55\] data\[56\] net18 _064_ VPWR VGND sg13g2_mux2_1
+X_300_ net35 VGND VPWR _037_ data\[29\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_19_800 VPWR VGND sg13g2_decap_8
+XFILLER_1_35 VPWR VGND sg13g2_decap_8
+XFILLER_2_497 VPWR VGND sg13g2_decap_8
+XFILLER_46_641 VPWR VGND sg13g2_decap_8
+XFILLER_34_858 VPWR VGND sg13g2_decap_4
+XFILLER_34_814 VPWR VGND sg13g2_decap_8
+XFILLER_39_0 VPWR VGND sg13g2_decap_8
+XFILLER_25_814 VPWR VGND sg13g2_decap_8
+Xinput1 rst_n net1 VPWR VGND sg13g2_buf_1
+XFILLER_40_828 VPWR VGND sg13g2_decap_4
+XFILLER_10_11 VPWR VGND sg13g2_decap_8
+XFILLER_10_55 VPWR VGND sg13g2_fill_1
+XFILLER_4_718 VPWR VGND sg13g2_decap_8
+XFILLER_16_814 VPWR VGND sg13g2_decap_8
+XFILLER_31_817 VPWR VGND sg13g2_decap_8
+X_145_ _107_ _104_ osc_out _102_ u_custom_cells.u_latch0.D VPWR VGND sg13g2_a22oi_1
+X_214_ data\[38\] data\[39\] net14 _047_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_740 VPWR VGND sg13g2_decap_8
+XFILLER_22_828 VPWR VGND sg13g2_decap_8
+XFILLER_13_828 VPWR VGND sg13g2_decap_8
+XFILLER_0_776 VPWR VGND sg13g2_decap_8
+XFILLER_48_725 VPWR VGND sg13g2_decap_8
+XFILLER_46_84 VPWR VGND sg13g2_decap_8
+XFILLER_8_821 VPWR VGND sg13g2_decap_8
+X_128_ VPWR _095_ u_shift_reg.bit_count\[2\] VGND sg13g2_inv_1
+XFILLER_30_4 VPWR VGND sg13g2_decap_8
+XFILLER_47_791 VPWR VGND sg13g2_decap_8
+XFILLER_45_728 VPWR VGND sg13g2_decap_8
+XFILLER_26_986 VPWR VGND sg13g2_decap_8
+XFILLER_0_573 VPWR VGND sg13g2_decap_8
+XFILLER_4_389 VPWR VGND sg13g2_decap_4
+XFILLER_48_599 VPWR VGND sg13g2_decap_8
+XFILLER_48_522 VPWR VGND sg13g2_decap_8
+XFILLER_44_783 VPWR VGND sg13g2_decap_8
+XFILLER_35_772 VPWR VGND sg13g2_decap_8
+XFILLER_5_109 VPWR VGND sg13g2_decap_8
+XFILLER_26_772 VPWR VGND sg13g2_decap_8
+XFILLER_41_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_632 VPWR VGND sg13g2_decap_8
+XFILLER_4_46 VPWR VGND sg13g2_decap_8
+XFILLER_49_842 VPWR VGND sg13g2_decap_8
+XFILLER_17_772 VPWR VGND sg13g2_decap_8
+XFILLER_48_385 VPWR VGND sg13g2_fill_2
+XFILLER_48_374 VPWR VGND sg13g2_decap_8
+XFILLER_44_591 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_59 VPWR VGND uo_out[5] sg13g2_tielo
+Xheichips25_internal_48 VPWR VGND uio_oe[2] sg13g2_tielo
+XFILLER_32_786 VPWR VGND sg13g2_decap_8
+XFILLER_23_786 VPWR VGND sg13g2_decap_8
+Xfanout45 net46 net45 VPWR VGND sg13g2_buf_1
+Xfanout34 net41 net34 VPWR VGND sg13g2_buf_1
+Xfanout23 _113_ net23 VPWR VGND sg13g2_buf_1
+XFILLER_1_112 VPWR VGND sg13g2_decap_8
+XFILLER_1_189 VPWR VGND sg13g2_decap_8
+XFILLER_8_4 VPWR VGND sg13g2_decap_8
+XFILLER_49_116 VPWR VGND sg13g2_decap_8
+XFILLER_2_646 VPWR VGND sg13g2_decap_8
+XFILLER_46_834 VPWR VGND sg13g2_decap_8
+XFILLER_14_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_440 VPWR VGND sg13g2_fill_2
+XFILLER_49_661 VPWR VGND sg13g2_decap_8
+XFILLER_48_193 VPWR VGND sg13g2_fill_1
+XFILLER_48_182 VPWR VGND sg13g2_decap_8
+XFILLER_47_609 VPWR VGND sg13g2_decap_8
+XFILLER_28_856 VPWR VGND sg13g2_decap_4
+XFILLER_46_119 VPWR VGND sg13g2_decap_8
+X_161_ _116_ net29 u_shift_reg.bit_count\[0\] _119_ VPWR VGND sg13g2_a21o_1
+X_230_ data\[54\] data\[55\] net17 _063_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_14 VPWR VGND sg13g2_decap_8
+XFILLER_49_95 VPWR VGND sg13g2_decap_8
+XFILLER_46_620 VPWR VGND sg13g2_decap_8
+XFILLER_46_697 VPWR VGND sg13g2_decap_8
+X_359_ u_custom_cells.u_latch0.D data\[85\] u_custom_cells.u_latch0.Q VPWR VGND sg13g2_dlhq_1
+XFILLER_6_793 VPWR VGND sg13g2_decap_8
+XFILLER_5_292 VPWR VGND sg13g2_decap_8
+Xinput2 ui_in[0] net2 VPWR VGND sg13g2_buf_1
+XFILLER_40_807 VPWR VGND sg13g2_decap_8
+X_144_ _106_ adc_data\[4\] _100_ VPWR VGND sg13g2_nand2_1
+X_213_ data\[37\] data\[38\] net20 _046_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_262 VPWR VGND sg13g2_decap_8
+XFILLER_3_796 VPWR VGND sg13g2_decap_8
+XFILLER_46_483 VPWR VGND sg13g2_decap_4
+XFILLER_22_807 VPWR VGND sg13g2_decap_8
+XFILLER_13_807 VPWR VGND sg13g2_decap_8
+XFILLER_44_409 VPWR VGND sg13g2_decap_8
+XFILLER_21_22 VPWR VGND sg13g2_decap_8
+XFILLER_0_755 VPWR VGND sg13g2_decap_8
+XFILLER_48_704 VPWR VGND sg13g2_decap_8
+XFILLER_47_214 VPWR VGND sg13g2_fill_1
+XFILLER_46_63 VPWR VGND sg13g2_decap_8
+XFILLER_8_800 VPWR VGND sg13g2_decap_8
+XFILLER_7_35 VPWR VGND sg13g2_decap_8
+XFILLER_23_4 VPWR VGND sg13g2_decap_8
+XFILLER_3_593 VPWR VGND sg13g2_decap_8
+XFILLER_47_770 VPWR VGND sg13g2_decap_8
+XFILLER_27_1008 VPWR VGND sg13g2_decap_8
+XFILLER_45_707 VPWR VGND sg13g2_decap_8
+XFILLER_26_965 VPWR VGND sg13g2_decap_8
+XFILLER_44_239 VPWR VGND sg13g2_fill_1
+XFILLER_5_814 VPWR VGND sg13g2_decap_8
+XFILLER_0_552 VPWR VGND sg13g2_decap_8
+XFILLER_48_501 VPWR VGND sg13g2_decap_8
+XFILLER_29_792 VPWR VGND sg13g2_decap_8
+XFILLER_48_578 VPWR VGND sg13g2_decap_8
+XFILLER_44_762 VPWR VGND sg13g2_decap_8
+XFILLER_49_309 VPWR VGND sg13g2_decap_8
+XFILLER_2_828 VPWR VGND sg13g2_decap_8
+XFILLER_27_21 VPWR VGND sg13g2_decap_8
+XFILLER_43_42 VPWR VGND sg13g2_decap_8
+XFILLER_41_765 VPWR VGND sg13g2_decap_8
+XFILLER_5_688 VPWR VGND sg13g2_decap_8
+XFILLER_5_611 VPWR VGND sg13g2_decap_8
+XFILLER_4_25 VPWR VGND sg13g2_decap_8
+XFILLER_49_821 VPWR VGND sg13g2_decap_8
+XFILLER_48_353 VPWR VGND sg13g2_decap_8
+XFILLER_32_765 VPWR VGND sg13g2_decap_8
+Xheichips25_internal_49 VPWR VGND uio_oe[3] sg13g2_tielo
+XFILLER_23_765 VPWR VGND sg13g2_decap_8
+Xfanout46 net1 net46 VPWR VGND sg13g2_buf_1
+Xfanout35 net36 net35 VPWR VGND sg13g2_buf_1
+Xfanout24 net25 net24 VPWR VGND sg13g2_buf_1
+XFILLER_2_625 VPWR VGND sg13g2_decap_8
+XFILLER_1_168 VPWR VGND sg13g2_decap_8
+XFILLER_46_813 VPWR VGND sg13g2_decap_8
+XFILLER_38_42 VPWR VGND sg13g2_decap_8
+XFILLER_14_765 VPWR VGND sg13g2_decap_8
+XFILLER_5_485 VPWR VGND sg13g2_decap_8
+XFILLER_49_640 VPWR VGND sg13g2_decap_8
+XFILLER_48_161 VPWR VGND sg13g2_decap_8
+XFILLER_37_846 VPWR VGND sg13g2_decap_8
+XFILLER_20_779 VPWR VGND sg13g2_decap_8
+XFILLER_28_835 VPWR VGND sg13g2_decap_8
+XFILLER_43_849 VPWR VGND sg13g2_decap_8
+XFILLER_11_779 VPWR VGND sg13g2_decap_8
+XFILLER_24_55 VPWR VGND sg13g2_fill_1
+X_160_ net29 _116_ u_shift_reg.bit_count\[0\] _118_ VPWR VGND sg13g2_nand3_1
+XFILLER_40_21 VPWR VGND sg13g2_decap_8
+XFILLER_2_433 VPWR VGND sg13g2_fill_1
+XFILLER_2_466 VPWR VGND sg13g2_decap_8
+XFILLER_49_74 VPWR VGND sg13g2_decap_8
+XFILLER_46_676 VPWR VGND sg13g2_decap_8
+X_358_ _000_ data\[84\] u_custom_cells.u_latch0.D VPWR VGND sg13g2_dlhq_1
+XFILLER_6_772 VPWR VGND sg13g2_decap_8
+X_289_ net42 VGND VPWR _026_ data\[18\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_25_849 VPWR VGND sg13g2_decap_8
+Xinput3 ui_in[1] net3 VPWR VGND sg13g2_buf_1
+XFILLER_33_860 VPWR VGND sg13g2_fill_2
+XFILLER_10_46 VPWR VGND sg13g2_decap_8
+X_212_ data\[36\] data\[37\] net20 _045_ VPWR VGND sg13g2_mux2_1
+XFILLER_35_21 VPWR VGND sg13g2_decap_8
+X_143_ _105_ VPWR net9 VGND _101_ _103_ sg13g2_o21ai_1
+XFILLER_2_296 VPWR VGND sg13g2_fill_2
+XFILLER_3_775 VPWR VGND sg13g2_decap_8
+XFILLER_30_841 VPWR VGND sg13g2_decap_8
+XFILLER_44_0 VPWR VGND sg13g2_decap_8
+XFILLER_0_734 VPWR VGND sg13g2_decap_8
+XFILLER_46_42 VPWR VGND sg13g2_decap_8
+XFILLER_7_14 VPWR VGND sg13g2_decap_8
+XFILLER_3_572 VPWR VGND sg13g2_decap_8
+XFILLER_26_944 VPWR VGND sg13g2_decap_8
+XFILLER_38_793 VPWR VGND sg13g2_decap_8
+XFILLER_32_11 VPWR VGND sg13g2_decap_8
+XFILLER_48_557 VPWR VGND sg13g2_decap_8
+XFILLER_44_741 VPWR VGND sg13g2_decap_8
+XFILLER_3_391 VPWR VGND sg13g2_fill_1
+XFILLER_2_807 VPWR VGND sg13g2_decap_8
+XFILLER_43_21 VPWR VGND sg13g2_decap_8
+XFILLER_5_667 VPWR VGND sg13g2_decap_8
+XFILLER_4_144 VPWR VGND sg13g2_decap_8
+XFILLER_49_800 VPWR VGND sg13g2_decap_8
+XFILLER_48_332 VPWR VGND sg13g2_decap_8
+Xfanout36 net37 net36 VPWR VGND sg13g2_buf_1
+Xfanout25 net28 net25 VPWR VGND sg13g2_buf_1
+Xfanout14 net15 net14 VPWR VGND sg13g2_buf_1
+XFILLER_1_147 VPWR VGND sg13g2_decap_8
+XFILLER_2_604 VPWR VGND sg13g2_decap_8
+XFILLER_38_21 VPWR VGND sg13g2_decap_8
+XFILLER_5_442 VPWR VGND sg13g2_fill_1
+XFILLER_1_681 VPWR VGND sg13g2_decap_8
+XFILLER_5_475 VPWR VGND sg13g2_decap_4
+XFILLER_48_7 VPWR VGND sg13g2_decap_8
+XFILLER_49_696 VPWR VGND sg13g2_decap_8
+XFILLER_48_140 VPWR VGND sg13g2_decap_8
+XFILLER_37_825 VPWR VGND sg13g2_fill_1
+XFILLER_37_814 VPWR VGND sg13g2_decap_8
+XFILLER_28_814 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_5_0_clk_regs clknet_0_clk_regs clknet_4_5_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_24_23 VPWR VGND sg13g2_decap_8
+XFILLER_2_445 VPWR VGND sg13g2_decap_8
+XFILLER_49_53 VPWR VGND sg13g2_decap_8
+XFILLER_19_814 VPWR VGND sg13g2_decap_8
+XFILLER_1_49 VPWR VGND sg13g2_decap_8
+XFILLER_46_655 VPWR VGND sg13g2_decap_8
+XFILLER_34_828 VPWR VGND sg13g2_fill_2
+X_357_ net34 VGND VPWR _094_ u_shift_reg.locked clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+X_288_ net42 VGND VPWR _025_ data\[17\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+Xinput4 ui_in[2] net4 VPWR VGND sg13g2_buf_1
+XFILLER_49_493 VPWR VGND sg13g2_decap_8
+XFILLER_25_828 VPWR VGND sg13g2_decap_8
+XFILLER_10_25 VPWR VGND sg13g2_decap_8
+XFILLER_16_828 VPWR VGND sg13g2_decap_8
+X_142_ _105_ _104_ stable _100_ adc_data\[3\] VPWR VGND sg13g2_a22oi_1
+X_211_ data\[35\] data\[36\] net20 _044_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_754 VPWR VGND sg13g2_decap_8
+XFILLER_18_8 VPWR VGND sg13g2_fill_2
+XFILLER_30_820 VPWR VGND sg13g2_decap_8
+XFILLER_37_0 VPWR VGND sg13g2_decap_8
+XFILLER_2_81 VPWR VGND sg13g2_decap_8
+XFILLER_0_713 VPWR VGND sg13g2_decap_8
+XFILLER_48_739 VPWR VGND sg13g2_decap_8
+XFILLER_46_98 VPWR VGND sg13g2_decap_8
+XFILLER_46_21 VPWR VGND sg13g2_decap_8
+XFILLER_26_923 VPWR VGND sg13g2_decap_8
+XFILLER_38_772 VPWR VGND sg13g2_decap_8
+XFILLER_0_521 VPWR VGND sg13g2_decap_8
+XFILLER_4_304 VPWR VGND sg13g2_fill_2
+XFILLER_0_587 VPWR VGND sg13g2_decap_8
+XFILLER_48_536 VPWR VGND sg13g2_decap_8
+XFILLER_44_797 VPWR VGND sg13g2_decap_8
+XFILLER_44_720 VPWR VGND sg13g2_decap_8
+XFILLER_26_1021 VPWR VGND sg13g2_decap_8
+XFILLER_35_786 VPWR VGND sg13g2_decap_8
+XFILLER_26_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_646 VPWR VGND sg13g2_decap_8
+XFILLER_4_123 VPWR VGND sg13g2_decap_8
+XFILLER_0_373 VPWR VGND sg13g2_fill_1
+XFILLER_0_384 VPWR VGND sg13g2_decap_8
+XFILLER_0_395 VPWR VGND sg13g2_fill_2
+XFILLER_49_856 VPWR VGND sg13g2_decap_4
+XFILLER_17_786 VPWR VGND sg13g2_decap_8
+XFILLER_4_690 VPWR VGND sg13g2_decap_8
+Xfanout37 net41 net37 VPWR VGND sg13g2_buf_1
+Xfanout26 net27 net26 VPWR VGND sg13g2_buf_1
+Xfanout15 net16 net15 VPWR VGND sg13g2_buf_1
+XFILLER_13_47 VPWR VGND sg13g2_decap_8
+XFILLER_1_126 VPWR VGND sg13g2_decap_8
+XFILLER_46_848 VPWR VGND sg13g2_decap_8
+XFILLER_1_660 VPWR VGND sg13g2_decap_8
+XFILLER_49_675 VPWR VGND sg13g2_decap_8
+XFILLER_9_793 VPWR VGND sg13g2_decap_8
+XFILLER_5_81 VPWR VGND sg13g2_decap_8
+XFILLER_43_807 VPWR VGND sg13g2_decap_8
+XFILLER_1_28 VPWR VGND sg13g2_decap_8
+XFILLER_6_4 VPWR VGND sg13g2_decap_8
+XFILLER_49_32 VPWR VGND sg13g2_decap_8
+XFILLER_46_634 VPWR VGND sg13g2_decap_8
+XFILLER_34_807 VPWR VGND sg13g2_decap_8
+X_287_ net42 VGND VPWR _024_ data\[16\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+X_356_ net42 VGND VPWR _093_ data\[85\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_25_807 VPWR VGND sg13g2_decap_8
+Xinput5 ui_in[3] net5 VPWR VGND sg13g2_buf_1
+XFILLER_49_472 VPWR VGND sg13g2_decap_8
+XFILLER_16_807 VPWR VGND sg13g2_decap_8
+X_141_ net5 net4 _104_ VPWR VGND sg13g2_nor2_1
+X_210_ data\[34\] data\[35\] net19 _043_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_733 VPWR VGND sg13g2_decap_8
+XFILLER_2_276 VPWR VGND sg13g2_decap_4
+X_339_ net44 VGND VPWR _076_ data\[68\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_60 VPWR VGND sg13g2_decap_8
+XFILLER_0_769 VPWR VGND sg13g2_decap_8
+XFILLER_48_718 VPWR VGND sg13g2_decap_8
+XFILLER_12_821 VPWR VGND sg13g2_decap_8
+XFILLER_46_77 VPWR VGND sg13g2_decap_8
+XFILLER_7_49 VPWR VGND sg13g2_decap_8
+XFILLER_8_814 VPWR VGND sg13g2_decap_8
+XFILLER_47_784 VPWR VGND sg13g2_decap_8
+XFILLER_46_294 VPWR VGND sg13g2_decap_8
+XFILLER_26_902 VPWR VGND sg13g2_decap_8
+XFILLER_26_979 VPWR VGND sg13g2_decap_8
+XFILLER_5_828 VPWR VGND sg13g2_decap_8
+XFILLER_0_500 VPWR VGND sg13g2_decap_8
+XFILLER_0_566 VPWR VGND sg13g2_decap_8
+XFILLER_48_515 VPWR VGND sg13g2_decap_8
+XFILLER_44_776 VPWR VGND sg13g2_decap_8
+XFILLER_26_1000 VPWR VGND sg13g2_decap_8
+XFILLER_47_581 VPWR VGND sg13g2_decap_8
+XFILLER_35_765 VPWR VGND sg13g2_decap_8
+XFILLER_26_765 VPWR VGND sg13g2_decap_8
+XFILLER_41_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_625 VPWR VGND sg13g2_decap_8
+XFILLER_4_102 VPWR VGND sg13g2_decap_8
+XFILLER_4_39 VPWR VGND sg13g2_decap_8
+XFILLER_49_835 VPWR VGND sg13g2_decap_8
+XFILLER_17_765 VPWR VGND sg13g2_decap_8
+XFILLER_48_367 VPWR VGND sg13g2_decap_8
+XFILLER_44_584 VPWR VGND sg13g2_decap_8
+XFILLER_32_779 VPWR VGND sg13g2_decap_8
+XFILLER_23_779 VPWR VGND sg13g2_decap_8
+Xfanout38 net39 net38 VPWR VGND sg13g2_buf_1
+Xfanout27 net28 net27 VPWR VGND sg13g2_buf_1
+Xfanout16 net23 net16 VPWR VGND sg13g2_buf_1
+XFILLER_1_105 VPWR VGND sg13g2_decap_8
+XFILLER_2_639 VPWR VGND sg13g2_decap_8
+XFILLER_49_109 VPWR VGND sg13g2_decap_8
+XFILLER_46_827 VPWR VGND sg13g2_decap_8
+XFILLER_14_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_499 VPWR VGND sg13g2_decap_8
+XFILLER_5_433 VPWR VGND sg13g2_decap_8
+XFILLER_0_182 VPWR VGND sg13g2_decap_8
+XFILLER_49_654 VPWR VGND sg13g2_decap_8
+XFILLER_48_175 VPWR VGND sg13g2_decap_8
+XFILLER_44_381 VPWR VGND sg13g2_fill_1
+XFILLER_9_772 VPWR VGND sg13g2_decap_8
+XFILLER_5_60 VPWR VGND sg13g2_decap_8
+XFILLER_28_849 VPWR VGND sg13g2_decap_8
+XFILLER_36_860 VPWR VGND sg13g2_fill_2
+XFILLER_49_11 VPWR VGND sg13g2_decap_8
+XFILLER_49_88 VPWR VGND sg13g2_decap_8
+XFILLER_46_613 VPWR VGND sg13g2_decap_8
+XFILLER_27_882 VPWR VGND sg13g2_decap_8
+XFILLER_45_112 VPWR VGND sg13g2_decap_8
+XFILLER_42_830 VPWR VGND sg13g2_fill_1
+XFILLER_10_793 VPWR VGND sg13g2_decap_8
+X_286_ net42 VGND VPWR _023_ data\[15\] clknet_4_14_0_clk_regs sg13g2_dfrbpq_1
+X_355_ net46 VGND VPWR _092_ data\[84\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_6_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_285 VPWR VGND sg13g2_decap_8
+XFILLER_49_451 VPWR VGND sg13g2_decap_8
+XFILLER_19_25 VPWR VGND sg13g2_decap_4
+X_140_ _102_ VPWR _103_ VGND data\[83\] u_custom_cells.u_latch0.Q sg13g2_o21ai_1
+XFILLER_2_200 VPWR VGND sg13g2_decap_8
+XFILLER_2_255 VPWR VGND sg13g2_decap_8
+XFILLER_3_789 VPWR VGND sg13g2_decap_8
+XFILLER_3_712 VPWR VGND sg13g2_decap_8
+XFILLER_46_421 VPWR VGND sg13g2_fill_2
+X_338_ net44 VGND VPWR _075_ data\[67\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_46_487 VPWR VGND sg13g2_fill_1
+XFILLER_30_855 VPWR VGND sg13g2_decap_8
+X_269_ net38 VGND VPWR _006_ u_shift_reg.bit_count\[5\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_21_15 VPWR VGND sg13g2_decap_8
+XFILLER_0_748 VPWR VGND sg13g2_decap_8
+XFILLER_46_56 VPWR VGND sg13g2_decap_8
+XFILLER_12_800 VPWR VGND sg13g2_decap_8
+XFILLER_7_28 VPWR VGND sg13g2_decap_8
+XFILLER_3_586 VPWR VGND sg13g2_decap_8
+XFILLER_47_763 VPWR VGND sg13g2_decap_8
+XFILLER_42_0 VPWR VGND sg13g2_decap_8
+XFILLER_26_958 VPWR VGND sg13g2_decap_8
+XFILLER_5_807 VPWR VGND sg13g2_decap_8
+XFILLER_4_306 VPWR VGND sg13g2_fill_1
+XFILLER_32_25 VPWR VGND sg13g2_decap_4
+XFILLER_0_545 VPWR VGND sg13g2_decap_8
+XFILLER_29_785 VPWR VGND sg13g2_decap_8
+XFILLER_44_755 VPWR VGND sg13g2_decap_8
+XFILLER_14_4 VPWR VGND sg13g2_decap_8
+XFILLER_47_560 VPWR VGND sg13g2_decap_8
+XFILLER_27_14 VPWR VGND sg13g2_decap_8
+XFILLER_43_35 VPWR VGND sg13g2_decap_8
+XFILLER_5_604 VPWR VGND sg13g2_decap_8
+XFILLER_4_18 VPWR VGND sg13g2_decap_8
+XFILLER_4_158 VPWR VGND sg13g2_decap_8
+XFILLER_0_320 VPWR VGND sg13g2_fill_1
+XFILLER_0_331 VPWR VGND sg13g2_decap_8
+XFILLER_1_821 VPWR VGND sg13g2_decap_8
+XFILLER_49_814 VPWR VGND sg13g2_decap_8
+XFILLER_48_346 VPWR VGND sg13g2_decap_8
+Xfanout39 net40 net39 VPWR VGND sg13g2_buf_1
+Xfanout28 _113_ net28 VPWR VGND sg13g2_buf_1
+Xfanout17 net23 net17 VPWR VGND sg13g2_buf_1
+XFILLER_2_618 VPWR VGND sg13g2_decap_8
+XFILLER_46_806 VPWR VGND sg13g2_decap_8
+XFILLER_38_35 VPWR VGND sg13g2_decap_8
+XFILLER_45_338 VPWR VGND sg13g2_fill_2
+XFILLER_5_412 VPWR VGND sg13g2_decap_8
+XFILLER_0_161 VPWR VGND sg13g2_decap_8
+XFILLER_1_695 VPWR VGND sg13g2_decap_8
+XFILLER_49_633 VPWR VGND sg13g2_decap_8
+XFILLER_48_154 VPWR VGND sg13g2_decap_8
+XFILLER_45_861 VPWR VGND sg13g2_fill_1
+XFILLER_28_828 VPWR VGND sg13g2_decap_8
+XFILLER_24_48 VPWR VGND sg13g2_decap_8
+XFILLER_40_14 VPWR VGND sg13g2_decap_8
+XFILLER_2_426 VPWR VGND sg13g2_decap_8
+XFILLER_2_459 VPWR VGND sg13g2_decap_8
+XFILLER_19_828 VPWR VGND sg13g2_decap_8
+XFILLER_49_67 VPWR VGND sg13g2_decap_8
+X_354_ net41 VGND VPWR _091_ data\[83\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_46_669 VPWR VGND sg13g2_decap_8
+XFILLER_10_772 VPWR VGND sg13g2_decap_8
+XFILLER_6_765 VPWR VGND sg13g2_decap_8
+X_285_ net35 VGND VPWR _022_ data\[14\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_253 VPWR VGND sg13g2_fill_2
+XFILLER_49_430 VPWR VGND sg13g2_decap_8
+XFILLER_46_7 VPWR VGND sg13g2_decap_8
+XFILLER_10_39 VPWR VGND sg13g2_decap_8
+XFILLER_35_14 VPWR VGND sg13g2_decap_8
+XFILLER_3_768 VPWR VGND sg13g2_decap_8
+X_337_ net46 VGND VPWR _074_ data\[66\] clknet_4_10_0_clk_regs sg13g2_dfrbpq_1
+Xclkbuf_4_4_0_clk_regs clknet_0_clk_regs clknet_4_4_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_30_834 VPWR VGND sg13g2_decap_8
+X_199_ data\[23\] data\[24\] net20 _032_ VPWR VGND sg13g2_mux2_1
+X_268_ net38 VGND VPWR _005_ u_shift_reg.bit_count\[4\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_95 VPWR VGND sg13g2_decap_8
+XFILLER_0_727 VPWR VGND sg13g2_decap_8
+XFILLER_46_35 VPWR VGND sg13g2_decap_8
+XFILLER_3_521 VPWR VGND sg13g2_decap_8
+XFILLER_3_565 VPWR VGND sg13g2_decap_8
+XFILLER_47_742 VPWR VGND sg13g2_decap_8
+XFILLER_35_0 VPWR VGND sg13g2_decap_8
+XFILLER_26_937 VPWR VGND sg13g2_decap_8
+XFILLER_38_786 VPWR VGND sg13g2_decap_8
+XFILLER_44_734 VPWR VGND sg13g2_decap_8
+XFILLER_4_830 VPWR VGND sg13g2_decap_4
+XFILLER_3_384 VPWR VGND sg13g2_decap_8
+XFILLER_3_362 VPWR VGND sg13g2_decap_8
+XFILLER_43_14 VPWR VGND sg13g2_decap_8
+XFILLER_1_800 VPWR VGND sg13g2_decap_8
+XFILLER_4_137 VPWR VGND sg13g2_decap_8
+Xfanout29 _112_ net29 VPWR VGND sg13g2_buf_1
+Xfanout18 net23 net18 VPWR VGND sg13g2_buf_1
+XFILLER_38_14 VPWR VGND sg13g2_decap_8
+XFILLER_0_140 VPWR VGND sg13g2_decap_8
+XFILLER_1_674 VPWR VGND sg13g2_decap_8
+XFILLER_5_479 VPWR VGND sg13g2_fill_2
+XFILLER_5_468 VPWR VGND sg13g2_decap_8
+XFILLER_49_612 VPWR VGND sg13g2_decap_8
+XFILLER_49_689 VPWR VGND sg13g2_decap_8
+XFILLER_48_199 VPWR VGND sg13g2_decap_4
+XFILLER_48_133 VPWR VGND sg13g2_decap_8
+XFILLER_45_840 VPWR VGND sg13g2_decap_8
+XFILLER_37_807 VPWR VGND sg13g2_decap_8
+XFILLER_44_372 VPWR VGND sg13g2_decap_8
+XFILLER_28_807 VPWR VGND sg13g2_decap_8
+XFILLER_5_95 VPWR VGND sg13g2_decap_8
+XFILLER_2_405 VPWR VGND sg13g2_decap_4
+XFILLER_2_438 VPWR VGND sg13g2_decap_8
+Xu_adc VPWR VGND analog_adc clknet_1_1__leaf_clk adc_data\[0\] adc_data\[1\] adc_data\[2\]
++ adc_data\[3\] adc_data\[4\] adc_data\[5\] adc_data\[6\] adc_data\[7\] u_adc/ready
++ data\[66\] adc
+XFILLER_49_46 VPWR VGND sg13g2_decap_8
+XFILLER_19_807 VPWR VGND sg13g2_decap_8
+XFILLER_46_648 VPWR VGND sg13g2_decap_8
+XFILLER_45_125 VPWR VGND sg13g2_decap_8
+X_284_ net35 VGND VPWR _021_ data\[13\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+X_353_ net40 VGND VPWR _090_ data\[82\] clknet_4_15_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_821 VPWR VGND sg13g2_decap_8
+XFILLER_5_232 VPWR VGND sg13g2_decap_8
+XFILLER_39_7 VPWR VGND sg13g2_decap_8
+XFILLER_49_486 VPWR VGND sg13g2_decap_8
+XFILLER_33_821 VPWR VGND sg13g2_decap_8
+XFILLER_10_18 VPWR VGND sg13g2_decap_8
+XFILLER_24_821 VPWR VGND sg13g2_decap_8
+XFILLER_4_4 VPWR VGND sg13g2_decap_8
+XFILLER_3_747 VPWR VGND sg13g2_decap_8
+XFILLER_15_821 VPWR VGND sg13g2_decap_8
+XFILLER_46_445 VPWR VGND sg13g2_fill_1
+XFILLER_46_423 VPWR VGND sg13g2_fill_1
+X_267_ net38 VGND VPWR _004_ u_shift_reg.bit_count\[3\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+X_336_ net31 VGND VPWR _073_ data\[65\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_813 VPWR VGND sg13g2_decap_8
+X_198_ data\[22\] data\[23\] net24 _031_ VPWR VGND sg13g2_mux2_1
+XFILLER_49_272 VPWR VGND sg13g2_fill_1
+XFILLER_49_261 VPWR VGND sg13g2_decap_8
+XFILLER_2_74 VPWR VGND sg13g2_decap_8
+XFILLER_0_706 VPWR VGND sg13g2_decap_8
+XFILLER_46_14 VPWR VGND sg13g2_decap_8
+XFILLER_8_828 VPWR VGND sg13g2_decap_8
+XFILLER_47_721 VPWR VGND sg13g2_decap_8
+XFILLER_47_798 VPWR VGND sg13g2_decap_8
+X_319_ net30 VGND VPWR _056_ data\[48\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+Xclkbuf_1_0__f_clk clknet_1_0__leaf_clk clknet_0_clk VPWR VGND sg13g2_buf_16
+XFILLER_26_916 VPWR VGND sg13g2_decap_8
+XFILLER_38_765 VPWR VGND sg13g2_decap_8
+XFILLER_0_514 VPWR VGND sg13g2_decap_8
+XFILLER_48_529 VPWR VGND sg13g2_decap_8
+XFILLER_25_982 VPWR VGND sg13g2_decap_8
+XFILLER_44_713 VPWR VGND sg13g2_decap_8
+XFILLER_26_1014 VPWR VGND sg13g2_decap_8
+XFILLER_3_341 VPWR VGND sg13g2_decap_8
+XFILLER_47_595 VPWR VGND sg13g2_decap_8
+XFILLER_35_779 VPWR VGND sg13g2_decap_8
+XFILLER_26_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_639 VPWR VGND sg13g2_decap_8
+XFILLER_4_116 VPWR VGND sg13g2_decap_8
+XFILLER_49_849 VPWR VGND sg13g2_decap_8
+XFILLER_17_779 VPWR VGND sg13g2_decap_8
+XFILLER_44_598 VPWR VGND sg13g2_decap_8
+XFILLER_44_554 VPWR VGND sg13g2_fill_2
+XFILLER_40_793 VPWR VGND sg13g2_decap_8
+XFILLER_4_683 VPWR VGND sg13g2_decap_8
+XFILLER_3_193 VPWR VGND sg13g2_decap_8
+Xfanout19 net20 net19 VPWR VGND sg13g2_buf_1
+XFILLER_31_782 VPWR VGND sg13g2_decap_8
+XFILLER_1_119 VPWR VGND sg13g2_decap_8
+XFILLER_22_793 VPWR VGND sg13g2_decap_8
+XFILLER_0_196 VPWR VGND sg13g2_decap_8
+XFILLER_1_653 VPWR VGND sg13g2_decap_8
+XFILLER_48_112 VPWR VGND sg13g2_decap_8
+XFILLER_49_668 VPWR VGND sg13g2_decap_8
+XFILLER_48_189 VPWR VGND sg13g2_decap_4
+XFILLER_13_793 VPWR VGND sg13g2_decap_8
+XFILLER_9_786 VPWR VGND sg13g2_decap_8
+XFILLER_5_74 VPWR VGND sg13g2_decap_8
+XFILLER_4_480 VPWR VGND sg13g2_fill_2
+XFILLER_48_690 VPWR VGND sg13g2_decap_8
+XFILLER_49_25 VPWR VGND sg13g2_decap_8
+XFILLER_27_896 VPWR VGND sg13g2_decap_8
+XFILLER_46_627 VPWR VGND sg13g2_decap_8
+XFILLER_42_800 VPWR VGND sg13g2_decap_8
+XFILLER_14_50 VPWR VGND sg13g2_decap_4
+X_283_ net39 VGND VPWR _020_ data\[12\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+X_352_ net40 VGND VPWR _089_ data\[81\] clknet_4_13_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_299 VPWR VGND sg13g2_decap_8
+XFILLER_5_255 VPWR VGND sg13g2_fill_1
+XFILLER_49_465 VPWR VGND sg13g2_decap_8
+XFILLER_49_410 VPWR VGND sg13g2_decap_8
+XFILLER_45_693 VPWR VGND sg13g2_decap_8
+XFILLER_44_192 VPWR VGND sg13g2_decap_8
+XFILLER_33_800 VPWR VGND sg13g2_decap_8
+XFILLER_24_800 VPWR VGND sg13g2_decap_8
+XFILLER_2_214 VPWR VGND sg13g2_fill_2
+XFILLER_3_726 VPWR VGND sg13g2_decap_8
+XFILLER_2_269 VPWR VGND sg13g2_decap_8
+XFILLER_15_800 VPWR VGND sg13g2_decap_8
+X_197_ data\[21\] data\[22\] net24 _030_ VPWR VGND sg13g2_mux2_1
+X_266_ net38 VGND VPWR _003_ u_shift_reg.bit_count\[2\] clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+X_335_ net31 VGND VPWR _072_ data\[64\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_53 VPWR VGND sg13g2_decap_8
+XFILLER_12_814 VPWR VGND sg13g2_decap_8
+XFILLER_8_807 VPWR VGND sg13g2_decap_8
+XFILLER_11_51 VPWR VGND sg13g2_decap_4
+XFILLER_47_777 VPWR VGND sg13g2_decap_8
+XFILLER_47_700 VPWR VGND sg13g2_decap_8
+XFILLER_46_254 VPWR VGND sg13g2_decap_4
+XFILLER_46_287 VPWR VGND sg13g2_decap_8
+X_249_ data\[73\] data\[74\] net26 _082_ VPWR VGND sg13g2_mux2_1
+X_318_ net31 VGND VPWR _055_ data\[47\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_0_559 VPWR VGND sg13g2_decap_8
+XFILLER_29_799 VPWR VGND sg13g2_decap_8
+XFILLER_48_508 VPWR VGND sg13g2_decap_8
+XFILLER_25_961 VPWR VGND sg13g2_decap_8
+XFILLER_44_769 VPWR VGND sg13g2_decap_8
+XFILLER_21_8 VPWR VGND sg13g2_decap_8
+XFILLER_47_91 VPWR VGND sg13g2_decap_8
+XFILLER_47_574 VPWR VGND sg13g2_decap_8
+XFILLER_40_0 VPWR VGND sg13g2_decap_8
+XFILLER_27_28 VPWR VGND sg13g2_fill_1
+XFILLER_43_49 VPWR VGND sg13g2_decap_8
+XFILLER_5_618 VPWR VGND sg13g2_decap_8
+XFILLER_0_345 VPWR VGND sg13g2_fill_2
+XFILLER_49_828 VPWR VGND sg13g2_decap_8
+XFILLER_40_772 VPWR VGND sg13g2_decap_8
+XFILLER_4_662 VPWR VGND sg13g2_decap_8
+XFILLER_12_4 VPWR VGND sg13g2_decap_8
+XFILLER_47_393 VPWR VGND sg13g2_fill_1
+XFILLER_47_382 VPWR VGND sg13g2_decap_8
+XFILLER_38_49 VPWR VGND sg13g2_decap_8
+XFILLER_22_772 VPWR VGND sg13g2_decap_8
+XFILLER_5_426 VPWR VGND sg13g2_decap_8
+XFILLER_0_175 VPWR VGND sg13g2_decap_8
+XFILLER_1_632 VPWR VGND sg13g2_decap_8
+XFILLER_49_647 VPWR VGND sg13g2_decap_8
+XFILLER_48_168 VPWR VGND sg13g2_decap_8
+XFILLER_13_772 VPWR VGND sg13g2_decap_8
+XFILLER_9_765 VPWR VGND sg13g2_decap_8
+XFILLER_44_81 VPWR VGND sg13g2_decap_8
+XFILLER_5_53 VPWR VGND sg13g2_decap_8
+XFILLER_40_28 VPWR VGND sg13g2_fill_1
+XFILLER_46_606 VPWR VGND sg13g2_decap_8
+XFILLER_27_842 VPWR VGND sg13g2_decap_8
+XFILLER_27_853 VPWR VGND sg13g2_fill_2
+X_351_ net40 VGND VPWR _088_ data\[80\] clknet_4_15_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_45_105 VPWR VGND sg13g2_decap_8
+XFILLER_10_786 VPWR VGND sg13g2_decap_8
+X_282_ net40 VGND VPWR _019_ data\[11\] clknet_4_12_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_201 VPWR VGND sg13g2_decap_8
+XFILLER_6_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_278 VPWR VGND sg13g2_decap_8
+XFILLER_49_444 VPWR VGND sg13g2_decap_8
+XFILLER_45_672 VPWR VGND sg13g2_decap_8
+XFILLER_33_856 VPWR VGND sg13g2_decap_4
+XFILLER_19_18 VPWR VGND sg13g2_decap_8
+XFILLER_35_28 VPWR VGND sg13g2_fill_1
+XFILLER_2_248 VPWR VGND sg13g2_decap_8
+XFILLER_3_705 VPWR VGND sg13g2_decap_8
+XFILLER_46_414 VPWR VGND sg13g2_decap_8
+XFILLER_46_403 VPWR VGND sg13g2_fill_1
+XFILLER_25_50 VPWR VGND sg13g2_decap_4
+X_334_ net30 VGND VPWR _071_ data\[63\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_848 VPWR VGND sg13g2_decap_8
+X_196_ data\[20\] data\[21\] net24 _029_ VPWR VGND sg13g2_mux2_1
+X_265_ net38 VGND VPWR _002_ u_shift_reg.bit_count\[1\] clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_32 VPWR VGND sg13g2_decap_8
+XFILLER_44_7 VPWR VGND sg13g2_decap_8
+XFILLER_2_793 VPWR VGND sg13g2_decap_8
+XFILLER_46_49 VPWR VGND sg13g2_decap_8
+XFILLER_3_502 VPWR VGND sg13g2_decap_8
+XFILLER_3_579 VPWR VGND sg13g2_decap_8
+XFILLER_3_535 VPWR VGND sg13g2_fill_2
+XFILLER_47_756 VPWR VGND sg13g2_decap_8
+X_317_ net33 VGND VPWR _054_ data\[46\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+X_179_ data\[3\] data\[4\] net21 _012_ VPWR VGND sg13g2_mux2_1
+X_248_ data\[72\] data\[73\] net26 _081_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_590 VPWR VGND sg13g2_decap_8
+XFILLER_32_18 VPWR VGND sg13g2_decap_8
+XFILLER_0_538 VPWR VGND sg13g2_decap_8
+XFILLER_29_778 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_3_0_clk_regs clknet_0_clk_regs clknet_4_3_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_44_748 VPWR VGND sg13g2_decap_8
+XFILLER_25_940 VPWR VGND sg13g2_decap_8
+XFILLER_0_0 VPWR VGND sg13g2_decap_8
+XFILLER_3_398 VPWR VGND sg13g2_decap_8
+XFILLER_3_376 VPWR VGND sg13g2_fill_2
+XFILLER_47_70 VPWR VGND sg13g2_decap_8
+XFILLER_47_553 VPWR VGND sg13g2_decap_8
+XFILLER_33_0 VPWR VGND sg13g2_decap_8
+XFILLER_43_28 VPWR VGND sg13g2_decap_8
+XFILLER_0_313 VPWR VGND sg13g2_decap_8
+XFILLER_1_814 VPWR VGND sg13g2_decap_8
+XFILLER_49_807 VPWR VGND sg13g2_decap_8
+XFILLER_48_339 VPWR VGND sg13g2_decap_8
+XFILLER_17_40 VPWR VGND sg13g2_decap_8
+XFILLER_44_556 VPWR VGND sg13g2_fill_1
+XFILLER_4_641 VPWR VGND sg13g2_decap_8
+XFILLER_3_151 VPWR VGND sg13g2_decap_8
+XFILLER_48_851 VPWR VGND sg13g2_decap_8
+XFILLER_38_28 VPWR VGND sg13g2_decap_8
+XFILLER_1_611 VPWR VGND sg13g2_decap_8
+XFILLER_5_405 VPWR VGND sg13g2_decap_8
+XFILLER_0_154 VPWR VGND sg13g2_decap_8
+XFILLER_1_688 VPWR VGND sg13g2_decap_8
+XFILLER_49_626 VPWR VGND sg13g2_decap_8
+XFILLER_48_147 VPWR VGND sg13g2_decap_8
+XFILLER_45_854 VPWR VGND sg13g2_decap_8
+XFILLER_5_32 VPWR VGND sg13g2_decap_8
+XFILLER_4_482 VPWR VGND sg13g2_fill_1
+XFILLER_2_419 VPWR VGND sg13g2_decap_8
+XFILLER_27_821 VPWR VGND sg13g2_decap_8
+X_350_ net40 VGND VPWR _087_ data\[79\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_10_765 VPWR VGND sg13g2_decap_8
+X_281_ net40 VGND VPWR _018_ data\[10\] clknet_4_15_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_18_821 VPWR VGND sg13g2_decap_8
+XFILLER_45_651 VPWR VGND sg13g2_decap_8
+XFILLER_44_150 VPWR VGND sg13g2_fill_2
+XFILLER_2_216 VPWR VGND sg13g2_fill_1
+X_264_ net33 VGND VPWR _001_ u_shift_reg.bit_count\[0\] clknet_4_6_0_clk_regs sg13g2_dfrbpq_1
+X_333_ net30 VGND VPWR _070_ data\[62\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_827 VPWR VGND sg13g2_decap_8
+X_195_ data\[19\] data\[20\] net24 _028_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_293 VPWR VGND sg13g2_decap_4
+XFILLER_2_11 VPWR VGND sg13g2_decap_8
+XFILLER_49_231 VPWR VGND sg13g2_decap_4
+XFILLER_37_7 VPWR VGND sg13g2_decap_8
+XFILLER_2_772 VPWR VGND sg13g2_decap_8
+XFILLER_49_286 VPWR VGND sg13g2_decap_4
+XFILLER_2_88 VPWR VGND sg13g2_decap_8
+XFILLER_46_28 VPWR VGND sg13g2_decap_8
+XFILLER_2_4 VPWR VGND sg13g2_decap_8
+XFILLER_47_735 VPWR VGND sg13g2_decap_8
+XFILLER_46_223 VPWR VGND sg13g2_decap_4
+X_247_ data\[71\] data\[72\] net26 _080_ VPWR VGND sg13g2_mux2_1
+X_316_ net34 VGND VPWR _053_ data\[45\] clknet_4_7_0_clk_regs sg13g2_dfrbpq_1
+X_178_ data\[2\] data\[3\] net21 _011_ VPWR VGND sg13g2_mux2_1
+XFILLER_38_779 VPWR VGND sg13g2_decap_8
+XFILLER_44_727 VPWR VGND sg13g2_decap_8
+XFILLER_25_996 VPWR VGND sg13g2_fill_1
+XFILLER_4_834 VPWR VGND sg13g2_fill_1
+XFILLER_4_823 VPWR VGND sg13g2_decap_8
+XFILLER_3_355 VPWR VGND sg13g2_fill_1
+XFILLER_3_300 VPWR VGND sg13g2_fill_1
+XFILLER_26_1028 VPWR VGND sg13g2_fill_1
+XFILLER_47_532 VPWR VGND sg13g2_decap_8
+XFILLER_43_793 VPWR VGND sg13g2_decap_8
+XFILLER_8_32 VPWR VGND sg13g2_decap_4
+XFILLER_34_793 VPWR VGND sg13g2_decap_8
+XFILLER_0_347 VPWR VGND sg13g2_fill_1
+XFILLER_0_358 VPWR VGND sg13g2_decap_8
+XFILLER_0_369 VPWR VGND sg13g2_decap_4
+XFILLER_25_793 VPWR VGND sg13g2_decap_8
+XFILLER_44_524 VPWR VGND sg13g2_decap_4
+XFILLER_4_697 VPWR VGND sg13g2_decap_8
+XFILLER_4_620 VPWR VGND sg13g2_decap_8
+XFILLER_3_130 VPWR VGND sg13g2_decap_8
+XFILLER_48_830 VPWR VGND sg13g2_decap_8
+XFILLER_16_793 VPWR VGND sg13g2_decap_8
+XFILLER_31_796 VPWR VGND sg13g2_decap_8
+XFILLER_39_830 VPWR VGND sg13g2_decap_4
+XFILLER_0_133 VPWR VGND sg13g2_decap_8
+XFILLER_1_667 VPWR VGND sg13g2_decap_8
+XFILLER_49_605 VPWR VGND sg13g2_decap_8
+XFILLER_48_126 VPWR VGND sg13g2_decap_8
+XFILLER_45_833 VPWR VGND sg13g2_decap_8
+XFILLER_44_365 VPWR VGND sg13g2_decap_8
+XFILLER_5_11 VPWR VGND sg13g2_decap_8
+XFILLER_5_88 VPWR VGND sg13g2_decap_8
+XFILLER_36_811 VPWR VGND sg13g2_decap_8
+XFILLER_49_39 VPWR VGND sg13g2_decap_8
+XFILLER_27_800 VPWR VGND sg13g2_decap_8
+X_280_ net43 VGND VPWR _017_ data\[9\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_814 VPWR VGND sg13g2_decap_8
+XFILLER_5_225 VPWR VGND sg13g2_decap_8
+XFILLER_18_800 VPWR VGND sg13g2_decap_8
+XFILLER_49_479 VPWR VGND sg13g2_decap_8
+XFILLER_45_630 VPWR VGND sg13g2_decap_8
+XFILLER_33_814 VPWR VGND sg13g2_decap_8
+XFILLER_24_814 VPWR VGND sg13g2_decap_8
+Xclkbuf_0_clk_regs clknet_0_clk_regs clk_regs VPWR VGND sg13g2_buf_16
+XFILLER_15_814 VPWR VGND sg13g2_decap_8
+XFILLER_46_438 VPWR VGND sg13g2_decap_8
+X_263_ _117_ net2 u_shift_reg.locked _094_ VPWR VGND sg13g2_a21o_1
+X_332_ net31 VGND VPWR _069_ data\[61\] clknet_4_1_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_30_806 VPWR VGND sg13g2_decap_8
+X_194_ data\[18\] data\[19\] net25 _027_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_751 VPWR VGND sg13g2_decap_8
+XFILLER_49_254 VPWR VGND sg13g2_decap_8
+XFILLER_2_67 VPWR VGND sg13g2_decap_8
+XFILLER_12_828 VPWR VGND sg13g2_decap_8
+XFILLER_11_32 VPWR VGND sg13g2_fill_2
+XFILLER_3_537 VPWR VGND sg13g2_fill_1
+XFILLER_47_714 VPWR VGND sg13g2_decap_8
+X_177_ data\[1\] data\[2\] net22 _010_ VPWR VGND sg13g2_mux2_1
+X_246_ data\[70\] data\[71\] net26 _079_ VPWR VGND sg13g2_mux2_1
+X_315_ net34 VGND VPWR _052_ data\[44\] clknet_4_7_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_26_909 VPWR VGND sg13g2_decap_8
+XFILLER_28_4 VPWR VGND sg13g2_decap_8
+XFILLER_0_507 VPWR VGND sg13g2_decap_8
+XFILLER_25_975 VPWR VGND sg13g2_decap_8
+XFILLER_44_706 VPWR VGND sg13g2_decap_8
+XFILLER_22_42 VPWR VGND sg13g2_decap_8
+XFILLER_4_802 VPWR VGND sg13g2_decap_8
+XFILLER_26_1007 VPWR VGND sg13g2_decap_8
+XFILLER_3_334 VPWR VGND sg13g2_decap_8
+XFILLER_47_588 VPWR VGND sg13g2_decap_8
+XFILLER_47_511 VPWR VGND sg13g2_decap_8
+XFILLER_8_11 VPWR VGND sg13g2_decap_8
+XFILLER_43_772 VPWR VGND sg13g2_decap_8
+XFILLER_8_55 VPWR VGND sg13g2_fill_1
+X_229_ data\[53\] data\[54\] net17 _062_ VPWR VGND sg13g2_mux2_1
+XFILLER_34_772 VPWR VGND sg13g2_decap_8
+XFILLER_4_109 VPWR VGND sg13g2_decap_8
+XFILLER_25_772 VPWR VGND sg13g2_decap_8
+XFILLER_40_786 VPWR VGND sg13g2_decap_8
+XFILLER_4_676 VPWR VGND sg13g2_decap_8
+XFILLER_3_186 VPWR VGND sg13g2_decap_8
+XFILLER_47_330 VPWR VGND sg13g2_fill_1
+XFILLER_16_772 VPWR VGND sg13g2_decap_8
+XFILLER_31_775 VPWR VGND sg13g2_decap_8
+XFILLER_22_786 VPWR VGND sg13g2_decap_8
+XFILLER_0_112 VPWR VGND sg13g2_decap_8
+XFILLER_1_646 VPWR VGND sg13g2_decap_8
+XFILLER_48_105 VPWR VGND sg13g2_decap_8
+XFILLER_0_189 VPWR VGND sg13g2_decap_8
+XFILLER_28_41 VPWR VGND sg13g2_decap_8
+XFILLER_45_812 VPWR VGND sg13g2_decap_8
+XFILLER_13_786 VPWR VGND sg13g2_decap_8
+XFILLER_44_95 VPWR VGND sg13g2_decap_8
+XFILLER_9_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_67 VPWR VGND sg13g2_decap_8
+XFILLER_10_4 VPWR VGND sg13g2_decap_8
+XFILLER_48_683 VPWR VGND sg13g2_decap_8
+XFILLER_36_856 VPWR VGND sg13g2_decap_4
+XFILLER_49_18 VPWR VGND sg13g2_decap_8
+XFILLER_45_119 VPWR VGND sg13g2_fill_2
+XFILLER_14_32 VPWR VGND sg13g2_fill_1
+XFILLER_14_43 VPWR VGND sg13g2_decap_8
+XFILLER_14_54 VPWR VGND sg13g2_fill_2
+XFILLER_27_889 VPWR VGND sg13g2_decap_8
+XFILLER_30_53 VPWR VGND sg13g2_fill_2
+XFILLER_49_458 VPWR VGND sg13g2_decap_8
+XFILLER_49_403 VPWR VGND sg13g2_decap_8
+XFILLER_45_686 VPWR VGND sg13g2_decap_8
+Xu_multimode_dll VPWR VGND data\[38\] clk0_out data\[20\] data\[21\] data\[22\] data\[23\]
++ data\[24\] clk1_out data\[25\] data\[26\] data\[27\] data\[28\] data\[29\] clk2_out
++ data\[30\] data\[31\] data\[32\] data\[33\] data\[34\] data\[39\] ena data\[40\]
++ data\[50\] data\[51\] data\[52\] data\[53\] data\[54\] data\[55\] data\[56\] data\[57\]
++ data\[58\] data\[59\] data\[41\] data\[60\] data\[61\] data\[62\] data\[63\] data\[64\]
++ data\[65\] data\[42\] data\[43\] data\[44\] data\[45\] data\[46\] data\[47\] data\[48\]
++ data\[49\] data\[5\] data\[6\] data\[7\] data\[8\] data\[9\] data\[10\] data\[11\]
++ data\[12\] data\[13\] data\[14\] data\[15\] data\[16\] data\[17\] data\[18\] data\[19\]
++ data\[0\] data\[1\] data\[2\] data\[3\] data\[4\] data\[35\] data\[36\] data\[37\]
++ clknet_1_0__leaf_clk osc_out net35 stable multimode_dll
+XFILLER_5_793 VPWR VGND sg13g2_decap_8
+XFILLER_48_480 VPWR VGND sg13g2_decap_8
+XFILLER_2_207 VPWR VGND sg13g2_decap_8
+XFILLER_3_719 VPWR VGND sg13g2_decap_8
+X_331_ net32 VGND VPWR _068_ data\[60\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+X_193_ data\[17\] data\[18\] net25 _026_ VPWR VGND sg13g2_mux2_1
+X_262_ data\[84\] data\[85\] net24 _093_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_730 VPWR VGND sg13g2_decap_8
+XFILLER_2_46 VPWR VGND sg13g2_decap_8
+XFILLER_49_211 VPWR VGND sg13g2_fill_1
+XFILLER_49_200 VPWR VGND sg13g2_decap_8
+XFILLER_5_590 VPWR VGND sg13g2_decap_8
+XFILLER_12_807 VPWR VGND sg13g2_decap_8
+XFILLER_11_11 VPWR VGND sg13g2_decap_8
+XFILLER_11_44 VPWR VGND sg13g2_decap_8
+XFILLER_11_55 VPWR VGND sg13g2_fill_1
+XFILLER_46_258 VPWR VGND sg13g2_fill_2
+X_314_ net34 VGND VPWR _051_ data\[43\] clknet_4_7_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_7_800 VPWR VGND sg13g2_decap_8
+XFILLER_7_833 VPWR VGND sg13g2_fill_2
+X_176_ data\[0\] data\[1\] net22 _009_ VPWR VGND sg13g2_mux2_1
+X_245_ data\[69\] data\[70\] net26 _078_ VPWR VGND sg13g2_mux2_1
+XFILLER_42_7 VPWR VGND sg13g2_decap_8
+XFILLER_46_792 VPWR VGND sg13g2_decap_8
+XFILLER_25_954 VPWR VGND sg13g2_decap_8
+XFILLER_47_84 VPWR VGND sg13g2_decap_8
+XFILLER_47_567 VPWR VGND sg13g2_decap_8
+X_159_ VPWR _117_ _116_ VGND sg13g2_inv_1
+X_228_ data\[52\] data\[53\] net15 _061_ VPWR VGND sg13g2_mux2_1
+XFILLER_0_338 VPWR VGND sg13g2_decap_8
+XFILLER_1_828 VPWR VGND sg13g2_decap_8
+XFILLER_17_54 VPWR VGND sg13g2_fill_2
+XFILLER_40_765 VPWR VGND sg13g2_decap_8
+XFILLER_33_42 VPWR VGND sg13g2_decap_8
+XFILLER_4_655 VPWR VGND sg13g2_decap_8
+XFILLER_3_165 VPWR VGND sg13g2_decap_4
+XFILLER_47_375 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_2_0_clk_regs clknet_0_clk_regs clknet_4_2_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_39_821 VPWR VGND sg13g2_decap_4
+XFILLER_22_765 VPWR VGND sg13g2_decap_8
+XFILLER_5_419 VPWR VGND sg13g2_decap_8
+XFILLER_0_168 VPWR VGND sg13g2_decap_8
+XFILLER_1_625 VPWR VGND sg13g2_decap_8
+XFILLER_44_312 VPWR VGND sg13g2_decap_4
+XFILLER_13_765 VPWR VGND sg13g2_decap_8
+XFILLER_44_63 VPWR VGND sg13g2_decap_4
+XFILLER_5_46 VPWR VGND sg13g2_decap_8
+XFILLER_48_662 VPWR VGND sg13g2_decap_8
+XFILLER_47_161 VPWR VGND sg13g2_decap_8
+XFILLER_27_835 VPWR VGND sg13g2_decap_8
+XFILLER_10_779 VPWR VGND sg13g2_decap_8
+XFILLER_14_11 VPWR VGND sg13g2_decap_8
+XFILLER_30_32 VPWR VGND sg13g2_decap_8
+XFILLER_49_437 VPWR VGND sg13g2_decap_8
+XFILLER_45_665 VPWR VGND sg13g2_decap_8
+XFILLER_33_849 VPWR VGND sg13g2_decap_8
+XFILLER_33_838 VPWR VGND sg13g2_fill_1
+XFILLER_5_772 VPWR VGND sg13g2_decap_8
+XFILLER_25_43 VPWR VGND sg13g2_decap_8
+XFILLER_25_54 VPWR VGND sg13g2_fill_2
+X_330_ net32 VGND VPWR _067_ data\[59\] clknet_4_0_0_clk_regs sg13g2_dfrbpq_1
+X_192_ data\[16\] data\[17\] net24 _025_ VPWR VGND sg13g2_mux2_1
+X_261_ VGND VPWR _096_ _112_ _092_ _127_ sg13g2_a21oi_1
+XFILLER_2_25 VPWR VGND sg13g2_decap_8
+XFILLER_2_786 VPWR VGND sg13g2_decap_8
+XFILLER_45_451 VPWR VGND sg13g2_fill_1
+Xclkbuf_4_15_0_clk_regs clknet_0_clk_regs clknet_4_15_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_3_528 VPWR VGND sg13g2_decap_8
+XFILLER_47_749 VPWR VGND sg13g2_decap_8
+XFILLER_36_42 VPWR VGND sg13g2_decap_8
+X_244_ data\[68\] data\[69\] net26 _077_ VPWR VGND sg13g2_mux2_1
+X_313_ net33 VGND VPWR _050_ data\[42\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+X_175_ data\[0\] net3 net29 _008_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_583 VPWR VGND sg13g2_decap_8
+XFILLER_35_7 VPWR VGND sg13g2_decap_8
+XFILLER_46_771 VPWR VGND sg13g2_decap_8
+XFILLER_25_933 VPWR VGND sg13g2_decap_8
+XFILLER_37_793 VPWR VGND sg13g2_decap_8
+XFILLER_3_369 VPWR VGND sg13g2_decap_8
+XFILLER_28_793 VPWR VGND sg13g2_decap_8
+XFILLER_47_63 VPWR VGND sg13g2_decap_8
+XFILLER_47_546 VPWR VGND sg13g2_decap_8
+X_227_ data\[51\] data\[52\] net15 _060_ VPWR VGND sg13g2_mux2_1
+X_158_ u_shift_reg.bit_count\[6\] _114_ u_shift_reg.bit_count\[4\] _116_ VPWR VGND
++ _115_ sg13g2_nand4_1
+XFILLER_19_793 VPWR VGND sg13g2_decap_8
+XFILLER_1_807 VPWR VGND sg13g2_decap_8
+XFILLER_33_21 VPWR VGND sg13g2_decap_8
+XFILLER_4_634 VPWR VGND sg13g2_decap_8
+XFILLER_3_144 VPWR VGND sg13g2_decap_8
+XFILLER_48_844 VPWR VGND sg13g2_decap_8
+XFILLER_39_800 VPWR VGND sg13g2_decap_8
+XFILLER_0_91 VPWR VGND sg13g2_decap_8
+XFILLER_1_604 VPWR VGND sg13g2_decap_8
+XFILLER_0_147 VPWR VGND sg13g2_decap_8
+Xclkbuf_1_1__f_clk clknet_1_1__leaf_clk clknet_0_clk VPWR VGND sg13g2_buf_16
+XFILLER_49_619 VPWR VGND sg13g2_decap_8
+XFILLER_45_847 VPWR VGND sg13g2_decap_8
+XFILLER_44_42 VPWR VGND sg13g2_decap_8
+XFILLER_44_379 VPWR VGND sg13g2_fill_2
+XFILLER_5_25 VPWR VGND sg13g2_decap_8
+XFILLER_0_692 VPWR VGND sg13g2_decap_8
+XFILLER_48_641 VPWR VGND sg13g2_decap_8
+XFILLER_47_140 VPWR VGND sg13g2_decap_8
+XFILLER_27_814 VPWR VGND sg13g2_decap_8
+XFILLER_42_828 VPWR VGND sg13g2_fill_2
+XFILLER_30_11 VPWR VGND sg13g2_decap_8
+XFILLER_5_239 VPWR VGND sg13g2_decap_4
+XFILLER_30_55 VPWR VGND sg13g2_fill_1
+XFILLER_18_814 VPWR VGND sg13g2_decap_8
+XFILLER_45_644 VPWR VGND sg13g2_decap_8
+XFILLER_44_143 VPWR VGND sg13g2_decap_8
+XFILLER_5_751 VPWR VGND sg13g2_decap_8
+XFILLER_24_828 VPWR VGND sg13g2_decap_8
+XFILLER_15_828 VPWR VGND sg13g2_decap_8
+X_260_ data\[84\] _112_ _127_ VPWR VGND sg13g2_nor2_1
+X_191_ data\[15\] data\[16\] net24 _024_ VPWR VGND sg13g2_mux2_1
+XFILLER_41_21 VPWR VGND sg13g2_decap_8
+XFILLER_49_224 VPWR VGND sg13g2_decap_8
+XFILLER_2_765 VPWR VGND sg13g2_decap_8
+XFILLER_49_279 VPWR VGND sg13g2_decap_8
+XFILLER_49_268 VPWR VGND sg13g2_decap_4
+XFILLER_47_728 VPWR VGND sg13g2_decap_8
+XFILLER_46_216 VPWR VGND sg13g2_fill_2
+XFILLER_36_21 VPWR VGND sg13g2_decap_8
+X_243_ data\[67\] data\[68\] net26 _076_ VPWR VGND sg13g2_mux2_1
+X_312_ net33 VGND VPWR _049_ data\[41\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+X_174_ _007_ u_shift_reg.bit_count\[6\] _125_ VPWR VGND sg13g2_xnor2_1
+XFILLER_2_562 VPWR VGND sg13g2_decap_8
+XFILLER_25_912 VPWR VGND sg13g2_decap_8
+XFILLER_37_772 VPWR VGND sg13g2_decap_8
+XFILLER_25_989 VPWR VGND sg13g2_decap_8
+XFILLER_4_816 VPWR VGND sg13g2_decap_8
+XFILLER_3_348 VPWR VGND sg13g2_decap_8
+XFILLER_47_525 VPWR VGND sg13g2_decap_8
+XFILLER_47_42 VPWR VGND sg13g2_decap_8
+XFILLER_28_772 VPWR VGND sg13g2_decap_8
+XFILLER_43_786 VPWR VGND sg13g2_decap_8
+XFILLER_8_25 VPWR VGND sg13g2_decap_8
+XFILLER_8_36 VPWR VGND sg13g2_fill_2
+X_157_ u_shift_reg.bit_count\[1\] u_shift_reg.bit_count\[3\] u_shift_reg.bit_count\[5\]
++ _115_ VPWR VGND sg13g2_nor3_1
+X_226_ data\[50\] data\[51\] net14 _059_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_381 VPWR VGND sg13g2_decap_8
+XFILLER_19_772 VPWR VGND sg13g2_decap_8
+XFILLER_26_4 VPWR VGND sg13g2_decap_8
+XFILLER_34_786 VPWR VGND sg13g2_decap_8
+XFILLER_25_786 VPWR VGND sg13g2_decap_8
+XFILLER_4_613 VPWR VGND sg13g2_decap_8
+XFILLER_3_123 VPWR VGND sg13g2_decap_8
+XFILLER_48_823 VPWR VGND sg13g2_decap_8
+XFILLER_16_786 VPWR VGND sg13g2_decap_8
+X_209_ data\[33\] data\[34\] net19 _042_ VPWR VGND sg13g2_mux2_1
+XFILLER_31_789 VPWR VGND sg13g2_decap_8
+XFILLER_39_834 VPWR VGND sg13g2_fill_1
+XFILLER_0_70 VPWR VGND sg13g2_decap_8
+XFILLER_17_0 VPWR VGND sg13g2_decap_8
+XFILLER_0_126 VPWR VGND sg13g2_decap_8
+XFILLER_28_11 VPWR VGND sg13g2_decap_8
+XFILLER_28_55 VPWR VGND sg13g2_fill_1
+XFILLER_48_119 VPWR VGND sg13g2_decap_8
+XFILLER_45_826 VPWR VGND sg13g2_decap_8
+XFILLER_44_21 VPWR VGND sg13g2_decap_8
+XFILLER_4_432 VPWR VGND sg13g2_fill_2
+XFILLER_0_671 VPWR VGND sg13g2_decap_8
+XFILLER_48_620 VPWR VGND sg13g2_decap_8
+XFILLER_48_697 VPWR VGND sg13g2_decap_8
+XFILLER_36_804 VPWR VGND sg13g2_decap_8
+XFILLER_8_793 VPWR VGND sg13g2_decap_8
+XFILLER_42_807 VPWR VGND sg13g2_decap_8
+XFILLER_49_417 VPWR VGND sg13g2_fill_2
+XFILLER_39_21 VPWR VGND sg13g2_decap_8
+XFILLER_45_623 VPWR VGND sg13g2_decap_8
+XFILLER_33_807 VPWR VGND sg13g2_decap_8
+XFILLER_26_881 VPWR VGND sg13g2_decap_8
+XFILLER_5_730 VPWR VGND sg13g2_decap_8
+XFILLER_24_807 VPWR VGND sg13g2_decap_8
+XFILLER_48_494 VPWR VGND sg13g2_decap_8
+XFILLER_15_807 VPWR VGND sg13g2_decap_8
+X_190_ data\[14\] data\[15\] net24 _023_ VPWR VGND sg13g2_mux2_1
+XFILLER_1_210 VPWR VGND sg13g2_decap_8
+XFILLER_49_247 VPWR VGND sg13g2_decap_8
+XFILLER_2_744 VPWR VGND sg13g2_decap_8
+XFILLER_20_821 VPWR VGND sg13g2_decap_8
+XFILLER_11_25 VPWR VGND sg13g2_decap_8
+XFILLER_47_707 VPWR VGND sg13g2_decap_8
+XFILLER_11_821 VPWR VGND sg13g2_decap_8
+X_173_ _123_ u_shift_reg.bit_count\[5\] _006_ VPWR VGND sg13g2_xor2_1
+X_242_ data\[66\] data\[67\] net26 _075_ VPWR VGND sg13g2_mux2_1
+X_311_ net33 VGND VPWR _048_ data\[40\] clknet_4_5_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_2_541 VPWR VGND sg13g2_decap_8
+XFILLER_47_0 VPWR VGND sg13g2_decap_8
+XFILLER_3_81 VPWR VGND sg13g2_decap_8
+XFILLER_25_968 VPWR VGND sg13g2_decap_8
+XFILLER_47_98 VPWR VGND sg13g2_decap_8
+XFILLER_47_504 VPWR VGND sg13g2_decap_8
+XFILLER_47_21 VPWR VGND sg13g2_decap_8
+XFILLER_43_765 VPWR VGND sg13g2_decap_8
+XFILLER_8_48 VPWR VGND sg13g2_decap_8
+X_156_ u_shift_reg.bit_count\[0\] u_shift_reg.bit_count\[2\] _114_ VPWR VGND sg13g2_and2_1
+X_225_ data\[49\] data\[50\] net14 _058_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_360 VPWR VGND sg13g2_decap_8
+XFILLER_40_7 VPWR VGND sg13g2_decap_8
+XFILLER_19_4 VPWR VGND sg13g2_decap_4
+XFILLER_46_592 VPWR VGND sg13g2_decap_8
+XFILLER_34_765 VPWR VGND sg13g2_decap_8
+XFILLER_25_1022 VPWR VGND sg13g2_decap_8
+XFILLER_25_765 VPWR VGND sg13g2_decap_8
+XFILLER_40_779 VPWR VGND sg13g2_decap_8
+XFILLER_3_102 VPWR VGND sg13g2_decap_8
+XFILLER_4_669 VPWR VGND sg13g2_decap_8
+XFILLER_48_802 VPWR VGND sg13g2_decap_8
+XFILLER_3_179 VPWR VGND sg13g2_decap_8
+XFILLER_47_389 VPWR VGND sg13g2_decap_4
+XFILLER_47_323 VPWR VGND sg13g2_decap_8
+XFILLER_16_765 VPWR VGND sg13g2_decap_8
+XFILLER_31_768 VPWR VGND sg13g2_decap_8
+X_139_ net5 net4 _102_ VPWR VGND sg13g2_and2_1
+X_208_ data\[32\] data\[33\] net19 _041_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_691 VPWR VGND sg13g2_decap_8
+XFILLER_22_779 VPWR VGND sg13g2_decap_8
+XFILLER_0_105 VPWR VGND sg13g2_decap_8
+XFILLER_1_639 VPWR VGND sg13g2_decap_8
+XFILLER_45_805 VPWR VGND sg13g2_decap_8
+XFILLER_13_779 VPWR VGND sg13g2_decap_8
+XFILLER_44_88 VPWR VGND sg13g2_decap_8
+XFILLER_4_466 VPWR VGND sg13g2_decap_4
+XFILLER_0_650 VPWR VGND sg13g2_decap_8
+XFILLER_48_676 VPWR VGND sg13g2_decap_8
+XFILLER_47_175 VPWR VGND sg13g2_decap_4
+XFILLER_8_772 VPWR VGND sg13g2_decap_8
+XFILLER_27_849 VPWR VGND sg13g2_decap_4
+XFILLER_14_25 VPWR VGND sg13g2_decap_8
+XFILLER_5_208 VPWR VGND sg13g2_decap_8
+XFILLER_30_46 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_1_0_clk_regs clknet_0_clk_regs clknet_4_1_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_26_860 VPWR VGND sg13g2_decap_8
+XFILLER_45_679 VPWR VGND sg13g2_decap_8
+XFILLER_45_602 VPWR VGND sg13g2_decap_8
+XFILLER_5_786 VPWR VGND sg13g2_decap_8
+XFILLER_48_473 VPWR VGND sg13g2_decap_8
+XFILLER_2_723 VPWR VGND sg13g2_decap_8
+XFILLER_2_39 VPWR VGND sg13g2_decap_8
+XFILLER_5_583 VPWR VGND sg13g2_decap_8
+XFILLER_49_4 VPWR VGND sg13g2_decap_8
+XFILLER_49_793 VPWR VGND sg13g2_decap_8
+XFILLER_20_800 VPWR VGND sg13g2_decap_8
+XFILLER_3_509 VPWR VGND sg13g2_fill_2
+XFILLER_11_800 VPWR VGND sg13g2_decap_8
+X_310_ net30 VGND VPWR _047_ data\[39\] clknet_4_4_0_clk_regs sg13g2_dfrbpq_1
+X_172_ _125_ u_shift_reg.bit_count\[5\] _123_ VPWR VGND sg13g2_nand2_1
+X_241_ data\[65\] data\[66\] net28 _074_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_597 VPWR VGND sg13g2_decap_8
+XFILLER_7_0 VPWR VGND sg13g2_decap_8
+XFILLER_46_785 VPWR VGND sg13g2_decap_8
+XFILLER_3_60 VPWR VGND sg13g2_decap_8
+XFILLER_25_947 VPWR VGND sg13g2_decap_8
+XFILLER_0_7 VPWR VGND sg13g2_decap_8
+XFILLER_3_328 VPWR VGND sg13g2_fill_1
+XFILLER_47_77 VPWR VGND sg13g2_decap_8
+X_224_ data\[48\] data\[49\] net14 _057_ VPWR VGND sg13g2_mux2_1
+X_155_ _113_ net2 u_shift_reg.locked VPWR VGND sg13g2_nand2b_1
+XFILLER_2_350 VPWR VGND sg13g2_decap_4
+XFILLER_33_7 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_14_0_clk_regs clknet_0_clk_regs clknet_4_14_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_46_571 VPWR VGND sg13g2_decap_8
+XFILLER_17_25 VPWR VGND sg13g2_decap_4
+XFILLER_17_47 VPWR VGND sg13g2_decap_8
+XFILLER_33_35 VPWR VGND sg13g2_decap_8
+XFILLER_4_648 VPWR VGND sg13g2_decap_8
+XFILLER_0_832 VPWR VGND sg13g2_fill_2
+XFILLER_3_158 VPWR VGND sg13g2_decap_8
+XFILLER_48_858 VPWR VGND sg13g2_decap_4
+XFILLER_47_368 VPWR VGND sg13g2_decap_8
+X_207_ data\[31\] data\[32\] net16 _040_ VPWR VGND sg13g2_mux2_1
+X_138_ _096_ _098_ _101_ VPWR VGND sg13g2_nor2_1
+XFILLER_3_670 VPWR VGND sg13g2_decap_8
+XFILLER_39_825 VPWR VGND sg13g2_fill_1
+XFILLER_39_814 VPWR VGND sg13g2_decap_8
+XFILLER_31_4 VPWR VGND sg13g2_decap_8
+XFILLER_1_618 VPWR VGND sg13g2_decap_8
+XFILLER_44_316 VPWR VGND sg13g2_fill_2
+XFILLER_44_67 VPWR VGND sg13g2_fill_1
+XFILLER_44_56 VPWR VGND sg13g2_decap_8
+XFILLER_5_39 VPWR VGND sg13g2_decap_8
+XFILLER_48_655 VPWR VGND sg13g2_decap_8
+XFILLER_47_154 VPWR VGND sg13g2_decap_8
+XFILLER_22_0 VPWR VGND sg13g2_fill_1
+XFILLER_27_828 VPWR VGND sg13g2_decap_8
+XFILLER_30_25 VPWR VGND sg13g2_decap_8
+XFILLER_49_419 VPWR VGND sg13g2_fill_1
+XFILLER_18_828 VPWR VGND sg13g2_decap_8
+XFILLER_45_658 VPWR VGND sg13g2_decap_8
+XFILLER_44_102 VPWR VGND sg13g2_decap_4
+XFILLER_5_765 VPWR VGND sg13g2_decap_8
+XFILLER_4_264 VPWR VGND sg13g2_fill_2
+XFILLER_41_35 VPWR VGND sg13g2_decap_4
+XFILLER_9_4 VPWR VGND sg13g2_decap_8
+XFILLER_2_779 VPWR VGND sg13g2_decap_8
+XFILLER_2_702 VPWR VGND sg13g2_decap_8
+XFILLER_2_18 VPWR VGND sg13g2_decap_8
+XFILLER_5_562 VPWR VGND sg13g2_decap_8
+XFILLER_49_772 VPWR VGND sg13g2_decap_8
+XFILLER_36_35 VPWR VGND sg13g2_decap_8
+X_240_ data\[64\] data\[65\] net15 _073_ VPWR VGND sg13g2_mux2_1
+X_171_ _123_ _124_ _005_ VPWR VGND sg13g2_nor2_1
+XFILLER_2_576 VPWR VGND sg13g2_decap_8
+XFILLER_46_764 VPWR VGND sg13g2_decap_8
+XFILLER_45_241 VPWR VGND sg13g2_decap_4
+XFILLER_49_591 VPWR VGND sg13g2_decap_8
+XFILLER_25_926 VPWR VGND sg13g2_decap_8
+XFILLER_37_786 VPWR VGND sg13g2_decap_8
+XFILLER_28_786 VPWR VGND sg13g2_decap_8
+XFILLER_47_56 VPWR VGND sg13g2_decap_8
+XFILLER_47_539 VPWR VGND sg13g2_decap_8
+X_223_ data\[47\] data\[48\] net14 _056_ VPWR VGND sg13g2_mux2_1
+X_154_ u_shift_reg.locked net2 _112_ VPWR VGND sg13g2_nor2b_1
+XFILLER_19_786 VPWR VGND sg13g2_decap_8
+XFILLER_33_14 VPWR VGND sg13g2_decap_8
+XFILLER_4_627 VPWR VGND sg13g2_decap_8
+XFILLER_3_137 VPWR VGND sg13g2_decap_8
+XFILLER_0_811 VPWR VGND sg13g2_decap_8
+XFILLER_48_837 VPWR VGND sg13g2_decap_8
+X_137_ adc_data\[2\] _100_ net8 VPWR VGND sg13g2_and2_1
+X_206_ data\[30\] data\[31\] net16 _039_ VPWR VGND sg13g2_mux2_1
+XFILLER_24_4 VPWR VGND sg13g2_decap_4
+XFILLER_0_84 VPWR VGND sg13g2_decap_8
+XFILLER_30_792 VPWR VGND sg13g2_decap_8
+XFILLER_28_25 VPWR VGND sg13g2_decap_4
+XFILLER_44_35 VPWR VGND sg13g2_decap_8
+XFILLER_5_18 VPWR VGND sg13g2_decap_8
+XFILLER_0_685 VPWR VGND sg13g2_decap_8
+XFILLER_48_634 VPWR VGND sg13g2_decap_8
+XFILLER_47_133 VPWR VGND sg13g2_decap_8
+XFILLER_36_818 VPWR VGND sg13g2_fill_1
+XFILLER_27_807 VPWR VGND sg13g2_decap_8
+XFILLER_1_405 VPWR VGND sg13g2_decap_4
+XFILLER_18_807 VPWR VGND sg13g2_decap_8
+XFILLER_45_637 VPWR VGND sg13g2_decap_8
+XFILLER_39_35 VPWR VGND sg13g2_decap_4
+XFILLER_26_895 VPWR VGND sg13g2_decap_8
+XFILLER_41_821 VPWR VGND sg13g2_decap_8
+XFILLER_5_744 VPWR VGND sg13g2_decap_8
+XFILLER_0_493 VPWR VGND sg13g2_decap_8
+XFILLER_44_692 VPWR VGND sg13g2_decap_8
+XFILLER_32_821 VPWR VGND sg13g2_decap_4
+XFILLER_23_821 VPWR VGND sg13g2_decap_8
+XFILLER_41_14 VPWR VGND sg13g2_decap_8
+XFILLER_49_217 VPWR VGND sg13g2_fill_2
+XFILLER_2_758 VPWR VGND sg13g2_decap_8
+XFILLER_45_445 VPWR VGND sg13g2_fill_1
+XFILLER_14_821 VPWR VGND sg13g2_decap_8
+XFILLER_5_541 VPWR VGND sg13g2_decap_8
+XFILLER_49_751 VPWR VGND sg13g2_decap_8
+XFILLER_48_261 VPWR VGND sg13g2_fill_2
+XFILLER_48_294 VPWR VGND sg13g2_fill_2
+XFILLER_36_14 VPWR VGND sg13g2_decap_8
+X_170_ VGND VPWR u_shift_reg.bit_count\[3\] _121_ _124_ u_shift_reg.bit_count\[4\]
++ sg13g2_a21oi_1
+XFILLER_2_555 VPWR VGND sg13g2_decap_8
+XFILLER_46_743 VPWR VGND sg13g2_fill_1
+XFILLER_46_732 VPWR VGND sg13g2_decap_8
+XFILLER_45_220 VPWR VGND sg13g2_decap_8
+X_299_ net35 VGND VPWR _036_ data\[28\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_393 VPWR VGND sg13g2_fill_2
+XFILLER_5_382 VPWR VGND sg13g2_decap_8
+XFILLER_5_371 VPWR VGND sg13g2_decap_8
+XFILLER_25_905 VPWR VGND sg13g2_decap_8
+XFILLER_49_570 VPWR VGND sg13g2_decap_8
+XFILLER_3_95 VPWR VGND sg13g2_decap_8
+XFILLER_37_765 VPWR VGND sg13g2_decap_8
+XFILLER_22_49 VPWR VGND sg13g2_decap_8
+XFILLER_4_809 VPWR VGND sg13g2_decap_8
+XFILLER_47_518 VPWR VGND sg13g2_decap_8
+XFILLER_47_35 VPWR VGND sg13g2_decap_8
+XFILLER_28_765 VPWR VGND sg13g2_decap_8
+XFILLER_8_18 VPWR VGND sg13g2_decap_8
+X_153_ net4 clk0_out adc_data\[7\] clk_delayed _098_ net5 net13 VPWR VGND sg13g2_mux4_1
+X_222_ data\[46\] data\[47\] net16 _055_ VPWR VGND sg13g2_mux2_1
+XFILLER_43_779 VPWR VGND sg13g2_decap_8
+XFILLER_2_374 VPWR VGND sg13g2_decap_8
+XFILLER_3_831 VPWR VGND sg13g2_decap_4
+XFILLER_19_765 VPWR VGND sg13g2_decap_8
+XFILLER_34_779 VPWR VGND sg13g2_decap_8
+XFILLER_45_0 VPWR VGND sg13g2_decap_8
+XFILLER_25_779 VPWR VGND sg13g2_decap_8
+XFILLER_4_606 VPWR VGND sg13g2_decap_8
+XFILLER_3_116 VPWR VGND sg13g2_decap_8
+XFILLER_0_834 VPWR VGND sg13g2_fill_1
+XFILLER_48_816 VPWR VGND sg13g2_decap_8
+XFILLER_16_779 VPWR VGND sg13g2_decap_8
+X_136_ adc_data\[1\] _100_ net7 VPWR VGND sg13g2_and2_1
+X_205_ data\[29\] data\[30\] net19 _038_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_193 VPWR VGND sg13g2_decap_8
+XFILLER_0_63 VPWR VGND sg13g2_decap_8
+XFILLER_0_119 VPWR VGND sg13g2_decap_8
+XFILLER_28_48 VPWR VGND sg13g2_decap_8
+XFILLER_45_819 VPWR VGND sg13g2_decap_8
+XFILLER_44_14 VPWR VGND sg13g2_decap_8
+XFILLER_21_793 VPWR VGND sg13g2_decap_4
+XFILLER_4_425 VPWR VGND sg13g2_decap_8
+XFILLER_0_664 VPWR VGND sg13g2_decap_8
+XFILLER_48_613 VPWR VGND sg13g2_decap_8
+XFILLER_47_112 VPWR VGND sg13g2_decap_8
+XFILLER_12_793 VPWR VGND sg13g2_decap_8
+XFILLER_8_786 VPWR VGND sg13g2_decap_8
+Xu_clkbuf_analog_pin1.u_buf analog_pin1 clk1_out VPWR VGND sg13g2_buf_16
+XFILLER_39_14 VPWR VGND sg13g2_decap_8
+XFILLER_45_616 VPWR VGND sg13g2_decap_8
+XFILLER_26_874 VPWR VGND sg13g2_decap_8
+XFILLER_41_800 VPWR VGND sg13g2_decap_8
+XFILLER_5_723 VPWR VGND sg13g2_decap_8
+XFILLER_4_266 VPWR VGND sg13g2_fill_1
+XFILLER_0_472 VPWR VGND sg13g2_decap_8
+XFILLER_48_421 VPWR VGND sg13g2_fill_1
+XFILLER_48_487 VPWR VGND sg13g2_decap_8
+XFILLER_44_671 VPWR VGND sg13g2_decap_8
+XFILLER_32_800 VPWR VGND sg13g2_decap_8
+XFILLER_23_800 VPWR VGND sg13g2_decap_8
+XFILLER_1_203 VPWR VGND sg13g2_decap_8
+XFILLER_49_207 VPWR VGND sg13g2_decap_4
+XFILLER_2_737 VPWR VGND sg13g2_decap_8
+XFILLER_14_800 VPWR VGND sg13g2_decap_8
+XFILLER_45_413 VPWR VGND sg13g2_fill_1
+XFILLER_5_597 VPWR VGND sg13g2_decap_8
+XFILLER_5_520 VPWR VGND sg13g2_decap_8
+XFILLER_20_814 VPWR VGND sg13g2_decap_8
+XFILLER_11_18 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_0_0_clk_regs clknet_0_clk_regs clknet_4_0_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_11_814 VPWR VGND sg13g2_decap_8
+XFILLER_7_807 VPWR VGND sg13g2_fill_1
+XFILLER_46_711 VPWR VGND sg13g2_decap_8
+XFILLER_27_980 VPWR VGND sg13g2_decap_8
+XFILLER_46_799 VPWR VGND sg13g2_decap_8
+X_298_ net36 VGND VPWR _035_ data\[27\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_350 VPWR VGND sg13g2_decap_8
+XFILLER_3_74 VPWR VGND sg13g2_decap_8
+XFILLER_47_14 VPWR VGND sg13g2_decap_8
+X_152_ net12 _110_ _111_ VPWR VGND sg13g2_nand2_1
+X_221_ data\[45\] data\[46\] net17 _054_ VPWR VGND sg13g2_mux2_1
+XFILLER_3_810 VPWR VGND sg13g2_decap_8
+XFILLER_46_585 VPWR VGND sg13g2_decap_8
+XFILLER_38_0 VPWR VGND sg13g2_decap_8
+XFILLER_33_49 VPWR VGND sg13g2_decap_8
+X_204_ data\[28\] data\[29\] net19 _037_ VPWR VGND sg13g2_mux2_1
+X_135_ adc_data\[0\] _100_ net6 VPWR VGND sg13g2_and2_1
+XFILLER_2_172 VPWR VGND sg13g2_decap_8
+XFILLER_3_684 VPWR VGND sg13g2_decap_8
+XFILLER_0_42 VPWR VGND sg13g2_decap_8
+XFILLER_47_861 VPWR VGND sg13g2_fill_1
+XFILLER_46_360 VPWR VGND sg13g2_fill_2
+XFILLER_38_861 VPWR VGND sg13g2_fill_1
+XFILLER_21_772 VPWR VGND sg13g2_decap_8
+XFILLER_4_415 VPWR VGND sg13g2_fill_2
+XFILLER_0_643 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_13_0_clk_regs clknet_0_clk_regs clknet_4_13_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_4_459 VPWR VGND sg13g2_decap_8
+XFILLER_48_669 VPWR VGND sg13g2_decap_8
+XFILLER_47_168 VPWR VGND sg13g2_decap_8
+XFILLER_12_772 VPWR VGND sg13g2_decap_8
+XFILLER_8_765 VPWR VGND sg13g2_decap_8
+XFILLER_14_18 VPWR VGND sg13g2_decap_8
+XFILLER_30_39 VPWR VGND sg13g2_decap_8
+XFILLER_26_842 VPWR VGND sg13g2_fill_1
+XFILLER_26_853 VPWR VGND sg13g2_decap_8
+XFILLER_5_779 VPWR VGND sg13g2_decap_8
+XFILLER_5_702 VPWR VGND sg13g2_decap_8
+XFILLER_48_466 VPWR VGND sg13g2_decap_8
+XFILLER_45_91 VPWR VGND sg13g2_decap_8
+XANTENNA_1 VPWR VGND adc_data\[6\] sg13g2_antennanp
+XFILLER_2_716 VPWR VGND sg13g2_decap_8
+XFILLER_49_219 VPWR VGND sg13g2_fill_1
+Xu_clkbuf_analog_pin0.u_buf analog_pin0 clk0_out VPWR VGND sg13g2_buf_16
+XFILLER_5_576 VPWR VGND sg13g2_decap_8
+XFILLER_1_793 VPWR VGND sg13g2_decap_8
+XFILLER_49_786 VPWR VGND sg13g2_decap_8
+XFILLER_48_296 VPWR VGND sg13g2_fill_1
+Xheichips25_internal VPWR VGND uio_oe[0] sg13g2_tielo
+XFILLER_36_49 VPWR VGND sg13g2_decap_8
+XFILLER_46_778 VPWR VGND sg13g2_decap_8
+X_297_ net36 VGND VPWR _034_ data\[26\] clknet_4_3_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_1_590 VPWR VGND sg13g2_decap_8
+XFILLER_3_53 VPWR VGND sg13g2_decap_8
+X_220_ data\[44\] data\[45\] net18 _053_ VPWR VGND sg13g2_mux2_1
+X_151_ _111_ _104_ clk1_out _100_ adc_data\[6\] VPWR VGND sg13g2_a22oi_1
+XFILLER_2_343 VPWR VGND sg13g2_decap_8
+XFILLER_2_354 VPWR VGND sg13g2_fill_2
+XFILLER_46_564 VPWR VGND sg13g2_decap_8
+XFILLER_46_520 VPWR VGND sg13g2_decap_8
+X_349_ net43 VGND VPWR _086_ data\[78\] clknet_4_9_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_17_18 VPWR VGND sg13g2_decap_8
+XFILLER_17_29 VPWR VGND sg13g2_fill_1
+XFILLER_33_28 VPWR VGND sg13g2_decap_8
+XFILLER_0_825 VPWR VGND sg13g2_decap_8
+X_203_ data\[27\] data\[28\] net20 _036_ VPWR VGND sg13g2_mux2_1
+X_134_ net5 net4 _100_ VPWR VGND sg13g2_nor2b_1
+XFILLER_3_663 VPWR VGND sg13g2_decap_8
+XFILLER_2_151 VPWR VGND sg13g2_decap_8
+XFILLER_48_91 VPWR VGND sg13g2_decap_8
+XFILLER_47_840 VPWR VGND sg13g2_decap_8
+XFILLER_39_807 VPWR VGND sg13g2_decap_8
+XFILLER_0_21 VPWR VGND sg13g2_decap_8
+XFILLER_0_98 VPWR VGND sg13g2_decap_8
+XFILLER_44_49 VPWR VGND sg13g2_decap_8
+XFILLER_4_405 VPWR VGND sg13g2_decap_4
+XFILLER_0_622 VPWR VGND sg13g2_decap_8
+XFILLER_0_699 VPWR VGND sg13g2_decap_8
+XFILLER_48_648 VPWR VGND sg13g2_decap_8
+XFILLER_47_147 VPWR VGND sg13g2_decap_8
+XFILLER_44_832 VPWR VGND sg13g2_fill_2
+XFILLER_35_821 VPWR VGND sg13g2_decap_8
+XFILLER_30_18 VPWR VGND sg13g2_decap_8
+XFILLER_39_49 VPWR VGND sg13g2_decap_8
+XFILLER_26_821 VPWR VGND sg13g2_decap_8
+XFILLER_5_758 VPWR VGND sg13g2_decap_8
+XFILLER_17_821 VPWR VGND sg13g2_decap_8
+XFILLER_45_70 VPWR VGND sg13g2_decap_8
+XANTENNA_2 VPWR VGND _101_ sg13g2_antennanp
+XFILLER_6_53 VPWR VGND sg13g2_fill_2
+XFILLER_41_28 VPWR VGND sg13g2_decap_8
+XFILLER_5_555 VPWR VGND sg13g2_decap_8
+XFILLER_0_271 VPWR VGND sg13g2_decap_8
+XFILLER_1_772 VPWR VGND sg13g2_decap_8
+XFILLER_49_710 VPWR VGND sg13g2_decap_8
+XFILLER_49_765 VPWR VGND sg13g2_decap_8
+XFILLER_36_28 VPWR VGND sg13g2_decap_8
+XFILLER_2_569 VPWR VGND sg13g2_decap_8
+XFILLER_46_757 VPWR VGND sg13g2_decap_8
+XFILLER_45_245 VPWR VGND sg13g2_fill_1
+XFILLER_45_234 VPWR VGND sg13g2_decap_8
+X_296_ net36 VGND VPWR _033_ data\[25\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_49_584 VPWR VGND sg13g2_decap_8
+XFILLER_3_32 VPWR VGND sg13g2_decap_8
+XFILLER_25_919 VPWR VGND sg13g2_decap_8
+XFILLER_37_779 VPWR VGND sg13g2_decap_8
+XFILLER_28_779 VPWR VGND sg13g2_decap_8
+XFILLER_47_49 VPWR VGND sg13g2_decap_8
+X_150_ _110_ _102_ _097_ VPWR VGND sg13g2_nand2b_1
+XFILLER_36_790 VPWR VGND sg13g2_decap_8
+XFILLER_2_322 VPWR VGND sg13g2_fill_1
+XFILLER_2_388 VPWR VGND sg13g2_decap_8
+XFILLER_19_779 VPWR VGND sg13g2_decap_8
+X_279_ net43 VGND VPWR _016_ data\[8\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+X_348_ net45 VGND VPWR _085_ data\[77\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_42_793 VPWR VGND sg13g2_decap_8
+XFILLER_33_793 VPWR VGND sg13g2_decap_8
+XFILLER_0_804 VPWR VGND sg13g2_decap_8
+XFILLER_24_793 VPWR VGND sg13g2_decap_8
+X_133_ VGND VPWR data\[83\] _097_ _000_ _099_ sg13g2_a21oi_1
+X_202_ data\[26\] data\[27\] net20 _035_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_130 VPWR VGND sg13g2_decap_8
+XFILLER_3_642 VPWR VGND sg13g2_decap_8
+XFILLER_17_7 VPWR VGND sg13g2_fill_1
+XFILLER_24_8 VPWR VGND sg13g2_fill_1
+XFILLER_48_70 VPWR VGND sg13g2_decap_8
+XFILLER_0_77 VPWR VGND sg13g2_decap_8
+XFILLER_15_793 VPWR VGND sg13g2_decap_8
+XFILLER_30_785 VPWR VGND sg13g2_decap_8
+XFILLER_28_18 VPWR VGND sg13g2_decap_8
+XFILLER_28_29 VPWR VGND sg13g2_fill_2
+XFILLER_43_0 VPWR VGND sg13g2_decap_8
+XFILLER_44_28 VPWR VGND sg13g2_decap_8
+XFILLER_0_601 VPWR VGND sg13g2_decap_8
+XFILLER_0_678 VPWR VGND sg13g2_decap_8
+XFILLER_29_841 VPWR VGND sg13g2_decap_8
+XFILLER_48_627 VPWR VGND sg13g2_decap_8
+XFILLER_47_126 VPWR VGND sg13g2_decap_8
+XFILLER_44_811 VPWR VGND sg13g2_decap_8
+XFILLER_3_450 VPWR VGND sg13g2_fill_1
+XFILLER_47_693 VPWR VGND sg13g2_decap_8
+XFILLER_35_800 VPWR VGND sg13g2_decap_8
+XFILLER_39_28 VPWR VGND sg13g2_decap_8
+XFILLER_26_800 VPWR VGND sg13g2_decap_8
+XFILLER_26_888 VPWR VGND sg13g2_decap_8
+XFILLER_41_814 VPWR VGND sg13g2_decap_8
+XFILLER_5_737 VPWR VGND sg13g2_decap_8
+XFILLER_0_431 VPWR VGND sg13g2_fill_1
+XFILLER_0_442 VPWR VGND sg13g2_decap_8
+XFILLER_0_453 VPWR VGND sg13g2_fill_2
+XFILLER_4_236 VPWR VGND sg13g2_fill_1
+XFILLER_0_486 VPWR VGND sg13g2_decap_8
+XFILLER_17_800 VPWR VGND sg13g2_decap_8
+XFILLER_32_814 VPWR VGND sg13g2_decap_8
+XANTENNA_3 VPWR VGND adc_data\[0\] sg13g2_antennanp
+XFILLER_6_32 VPWR VGND sg13g2_decap_8
+XFILLER_4_781 VPWR VGND sg13g2_decap_8
+XFILLER_23_814 VPWR VGND sg13g2_decap_8
+XFILLER_47_490 VPWR VGND sg13g2_decap_8
+XFILLER_1_217 VPWR VGND sg13g2_fill_2
+XFILLER_14_814 VPWR VGND sg13g2_decap_8
+XFILLER_1_751 VPWR VGND sg13g2_decap_8
+XFILLER_49_744 VPWR VGND sg13g2_decap_8
+XFILLER_20_828 VPWR VGND sg13g2_decap_8
+XFILLER_11_828 VPWR VGND sg13g2_decap_8
+XFILLER_2_548 VPWR VGND sg13g2_decap_8
+Xdelaybuf_0_clk delaynet_0_clk clk VPWR VGND sg13g2_buf_16
+XFILLER_26_51 VPWR VGND sg13g2_decap_4
+XFILLER_27_994 VPWR VGND sg13g2_decap_8
+XFILLER_46_725 VPWR VGND sg13g2_decap_8
+XFILLER_6_821 VPWR VGND sg13g2_decap_8
+X_295_ net37 VGND VPWR _032_ data\[24\] clknet_4_2_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_364 VPWR VGND sg13g2_decap_8
+XFILLER_47_7 VPWR VGND sg13g2_decap_8
+XFILLER_3_11 VPWR VGND sg13g2_decap_8
+XFILLER_49_563 VPWR VGND sg13g2_decap_8
+XFILLER_3_88 VPWR VGND sg13g2_decap_8
+XFILLER_45_791 VPWR VGND sg13g2_decap_8
+XFILLER_47_28 VPWR VGND sg13g2_decap_8
+XFILLER_3_824 VPWR VGND sg13g2_decap_8
+XFILLER_2_367 VPWR VGND sg13g2_decap_8
+XFILLER_46_599 VPWR VGND sg13g2_decap_8
+XFILLER_42_772 VPWR VGND sg13g2_decap_8
+X_278_ net43 VGND VPWR _015_ data\[7\] clknet_4_8_0_clk_regs sg13g2_dfrbpq_1
+X_347_ net45 VGND VPWR _084_ data\[76\] clknet_4_11_0_clk_regs sg13g2_dfrbpq_1
+XFILLER_5_194 VPWR VGND sg13g2_decap_8
+XFILLER_33_772 VPWR VGND sg13g2_decap_8
+XFILLER_3_109 VPWR VGND sg13g2_decap_8
+XFILLER_48_809 VPWR VGND sg13g2_decap_8
+XFILLER_24_772 VPWR VGND sg13g2_decap_8
+X_132_ data\[83\] _098_ _099_ VPWR VGND sg13g2_nor2_1
+X_201_ data\[25\] data\[26\] net19 _034_ VPWR VGND sg13g2_mux2_1
+XFILLER_2_186 VPWR VGND sg13g2_decap_8
+XFILLER_3_698 VPWR VGND sg13g2_decap_8
+XFILLER_3_621 VPWR VGND sg13g2_decap_8
+XFILLER_0_56 VPWR VGND sg13g2_decap_8
+XFILLER_15_772 VPWR VGND sg13g2_decap_8
+XFILLER_36_0 VPWR VGND sg13g2_decap_8
+XFILLER_21_786 VPWR VGND sg13g2_decap_8
+XFILLER_21_797 VPWR VGND sg13g2_fill_1
+XFILLER_0_657 VPWR VGND sg13g2_decap_8
+XFILLER_29_820 VPWR VGND sg13g2_decap_8
+XFILLER_48_606 VPWR VGND sg13g2_decap_8
+XFILLER_47_105 VPWR VGND sg13g2_decap_8
+XFILLER_44_834 VPWR VGND sg13g2_fill_1
+XFILLER_12_786 VPWR VGND sg13g2_decap_8
+XFILLER_8_779 VPWR VGND sg13g2_decap_8
+XFILLER_47_672 VPWR VGND sg13g2_decap_8
+XFILLER_45_609 VPWR VGND sg13g2_decap_8
+XFILLER_26_867 VPWR VGND sg13g2_decap_8
+XFILLER_5_716 VPWR VGND sg13g2_decap_8
+XFILLER_0_465 VPWR VGND sg13g2_decap_8
+XFILLER_48_414 VPWR VGND sg13g2_decap_8
+XANTENNA_4 VPWR VGND adc_data\[0\] sg13g2_antennanp
+XFILLER_6_55 VPWR VGND sg13g2_fill_1
+XFILLER_6_11 VPWR VGND sg13g2_decap_8
+XFILLER_4_760 VPWR VGND sg13g2_decap_8
+Xclkbuf_4_12_0_clk_regs clknet_0_clk_regs clknet_4_12_0_clk_regs VPWR VGND sg13g2_buf_8
+XFILLER_45_406 VPWR VGND sg13g2_decap_8
+Xoutput6 net6 uio_out[0] VPWR VGND sg13g2_buf_1
+XFILLER_5_513 VPWR VGND sg13g2_decap_8
+XFILLER_1_730 VPWR VGND sg13g2_decap_8
+XFILLER_20_807 VPWR VGND sg13g2_decap_8
+.ends
+
