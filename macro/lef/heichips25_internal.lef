@@ -573,11 +573,11 @@ MACRO heichips25_internal
         RECT 0.610 10.930 499.825 11.750 ;
         RECT 0.400 3.680 499.825 10.930 ;
       LAYER Metal4 ;
-        RECT 3.255 3.635 499.780 192.925 ;
+        RECT 4.215 3.635 499.780 192.925 ;
       LAYER Metal5 ;
-        RECT 3.215 3.470 495.025 193.090 ;
+        RECT 4.175 3.470 495.025 193.090 ;
       LAYER TopMetal1 ;
-        RECT 331.420 22.700 337.620 170.080 ;
+        RECT 331.420 28.160 337.620 162.940 ;
   END
 END heichips25_internal
 END LIBRARY
